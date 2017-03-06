@@ -1,4 +1,4 @@
-# Functions-IO
+# Functions-IO-Core
 ## Functional Micro Framework
 ## work in progress...
 Minimalist functional framework for [node](http://nodejs.org).
@@ -8,12 +8,11 @@ Minimalist functional framework for [node](http://nodejs.org).
   * Auto reload change in javascript files
   * Input/Output with automatic validation
   * Unit Test with automatic execution
-  * Openapi/Swagger definition generated automatically
   * Statistics - access, error, abort, time
 
 ## Installation
 ```bash
-$ npm install functions-io
+$ npm install functions-io-core
 ```
 
 ## Usage
@@ -38,46 +37,36 @@ module.exports = function(context, message, callBack){
 ```
 ### Start Server
 ```javascript
-var functionsio = require("functions-io");
-var app = functionsio();
+var functionsio = require("functions-io-core");
+var app = null;
+var config = {};
 
-app.listen(8080);
-```
+config.isGenerateStatistics = true;
+config.unitTest = {};
+config.unitTest.load = false;
+config.unitTest.executeOnStart = false;
 
-## Catalog API (Openapi / Swagger)
-```
-http://localhost:8080/catalog
-```
-## Admin
-```
-http://localhost:8080/admin
-```
-## swagger.json
-```
-http://localhost:8080/swagger.json
-```
-## Unit Test
-```
-http://localhost:8080/test
+app = functionsio.createServer(config);
+
+app.start(function(err){
+    if (err){
+        console.error(err);
+    }
+    else{
+        app.factory.invoke(null, "sum", "v1", {x:2,y:3}, null, function(err, data){
+            if (err){
+                console.error("err in invoke - " + err);
+            }
+            else{
+                console.log("Call sum(2, 3) = " + data.value);
+            }
+        });
+    }
+});
 ```
 
 ## Options property
 * isGenerateStatistics (default: true)
-* isDisableGenerateHTML (default: false)
-* enableCORS (default: false)
-* enableCORSFromOrigin (default: *)
-* path (default: functions)
-* mountpath (default: /)
 * unitTest
 * * load (default: true)
 * * executeOnStart (default: true)
-* scan
-* * automatic (default: true)
-* * interval (default: 1000)
-```javascript
-//example
-var functionsio = require("functions-io");
-var app = functionsio({path:"test/functions", enableCORS: true, scan:{automatic:false}});
-
-app.listen(8080);
-```
