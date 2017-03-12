@@ -2,19 +2,6 @@ var functionsio = require("../");
 var app = null;
 var config = {};
 
-var reloadFiles = function(){
-    app.loadFunctions(function(err, result){
-        if (err){
-            console.error(err);
-        }
-        else{
-            console.log('reloaded\n');
-            callFunction();
-            //console.log(result);
-        }
-    });
-}
-
 var callFunction = function(){
     try{
         app.factory.invoke(null, "subfolder.subfolder3.sum", "v1", {x:2,y:3}, null, function(err, data){
@@ -44,6 +31,6 @@ app.start(function(err){
         console.error(err);
     }
     else{
-        setInterval(reloadFiles, 10000);
+        setInterval(callFunction, 10000);
     }
 });

@@ -10,6 +10,18 @@ config.unitTest.executeOnStart = false;
 app = functionsio.createServer(config);
 app.pathFunctions = __dirname + "/../test/functions";
 
+app.factory.afterInvoke = function(functionManager, err, data, done){
+    console.log("after " + functionManager.name);
+    console.log(data);
+    done(err, data, functionManager);
+}
+
+app.factory.beforeInvoke = function(functionManager, message, context, done){
+    console.log("before " + functionManager.name);
+    console.log(message);
+    done(null, message, context);
+}
+
 app.start(function(err){
     if (err){
         console.error(err);

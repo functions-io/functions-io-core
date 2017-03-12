@@ -8,6 +8,8 @@ config.isGenerateStatistics = false;
 config.unitTest = {};
 config.unitTest.load = true;
 config.unitTest.executeOnStart = false;
+config.scan = {};
+config.scan.automatic = false;
 
 app = functionsio.createServer(config);
 app.pathFunctions = __dirname + "/functions";

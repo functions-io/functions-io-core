@@ -1,13 +1,7 @@
 var functionsio = require("../");
 var app = null;
-var config = {};
 
-config.isGenerateStatistics = true;
-config.unitTest = {};
-config.unitTest.load = false;
-config.unitTest.executeOnStart = false;
-
-app = functionsio.createServer(config);
+app = functionsio.createServer();
 app.pathFunctions = __dirname + "/../test/functions";
 
 app.start(function(err){
