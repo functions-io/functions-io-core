@@ -2,15 +2,15 @@
 
 var libSum = require("/lib/_libSum");
 
-module.name = "subfolder.subfolder2.sum";
-module.version = "v2";
-module.category = "test2";
+module.name = "sum";
+module.version = "v4";
+module.category = "test";
 module.summary = "sum";
 module.description = "sum x + y";
 
 module.input = {
-    x:{type:"integer", required:true},
-    y:{type:"integer", required:true}
+    x:{type:"integer", required:false, default: 10},
+    y:{type:"integer", required:false, default: 5}
 };
 module.output = {
     value:{type:"integer"}

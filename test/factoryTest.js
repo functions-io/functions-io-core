@@ -85,6 +85,16 @@ app.start(function(err){
         assert.equal(functionManager.module.input.y.required, true);
         assert.equal(functionManager.module.output.value.type, "integer");
         assert.equal(typeof functionManager.module.exports, "function");
+
+        functionManager = app.factory.getFunctionManager(null, "sum", "v4");
+        assert.equal(functionManager.module.category, "test");
+        assert.equal(functionManager.module.description, "sum x + y");
+        assert.equal(functionManager.module.input.x.type, "integer");
+        assert.equal(functionManager.module.input.x.required, false);
+        assert.equal(functionManager.module.input.y.type, "integer");
+        assert.equal(functionManager.module.input.y.required, false);
+        assert.equal(functionManager.module.output.value.type, "integer");
+        assert.equal(typeof functionManager.module.exports, "function");
         
         functionManager.module.exports(null, {x:2,y:3}, function(err, data){
             assert.equal(err, null);
@@ -114,6 +124,11 @@ app.start(function(err){
         app.factory.invoke(null, "sum", "v3", null, null, function(err, data){
             assert.equal(err, null);
             assert.strictEqual(data.value, 15, "igual");
+        });
+
+        app.factory.invoke(null, "sum", "v4", {x:2,y:3}, null, function(err, data){
+            assert.equal(err, null);
+            assert.strictEqual(data.value, 5, "igual");
         });
     }
 });
