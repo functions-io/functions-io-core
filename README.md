@@ -70,3 +70,6 @@ app.start(function(err){
 * unitTest
 * * load (default: true)
 * * executeOnStart (default: true)
+* scan
+* * automatic (default: true)
+* * interval (default: 2000)
