@@ -12,6 +12,8 @@ module.input = {
 };
 module.output = {
     list:{type:"array", required:true, items: {
+        category:{type:"string", required:true},
+        objectName:{type:"string", required:true},
         stage:{type:"string", required:true},
         name:{type:"string", required:true},
         version:{type:"string", required:true},
@@ -40,11 +42,12 @@ module.exports = function(context, message, callBack){
         item = module._factory.listFunctionManager[keys[i]];
 
         newItemStats = {};
+        newItemStats.category = item.module.category;
+        newItemStats.objectName = item.module.objectName;
         newItemStats.stage = item.stage;
         newItemStats.name = item.name;
         newItemStats.version = item.version;
         newItemStats.summary = item.summary;
-        newItemStats.category = item.module.category;
         newItemStats.hits = item.hits;
         listStats.push(newItemStats);
     }
