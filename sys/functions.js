@@ -21,21 +21,24 @@ module.exports = function(context, message, callBack){
     var item;
     var newItem;
     var keys;
+    var factory = module._factory;
 
-    keys = Object.keys(module._factory.listFunctionManager);
+    keys = Object.keys(factory.listFunctionManager);
 
     for (var i = 0; i < keys.length; i++){
-        item = module._factory.listFunctionManager[keys[i]];
+        item = factory.listFunctionManager[keys[i]];
 
-        newItem = {};
-        newItem.category = item.module.category;
-        newItem.objectName = item.module.objectName;
-        newItem.stage = item.stage;
-        newItem.name = item.name;
-        newItem.version = item.version;
-        newItem.summary = item.summary;
-        newItem.hits = item.hits;
-        listFunctions.push(newItem);
+        if ((item.module.category !== "sys") && (item.module.category !== "unitTest")){
+            newItem = {};
+            newItem.category = item.module.category;
+            newItem.objectName = item.module.objectName;
+            newItem.stage = item.stage;
+            newItem.name = item.name;
+            newItem.version = item.version;
+            newItem.summary = item.summary;
+
+            listFunctions.push(newItem);
+        }
     }
 
     callBack(null, listFunctions);

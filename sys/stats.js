@@ -35,11 +35,12 @@ module.exports = function(context, message, callBack){
     var item;
     var newItemStats;
     var keys;
+    var factory = module._factory;
 
-    keys = Object.keys(module._factory.listFunctionManager);
+    keys = Object.keys(factory.listFunctionManager);
 
     for (var i = 0; i < keys.length; i++){
-        item = module._factory.listFunctionManager[keys[i]];
+        item = factory.listFunctionManager[keys[i]];
 
         newItemStats = {};
         newItemStats.category = item.module.category;

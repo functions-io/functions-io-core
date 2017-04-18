@@ -53,7 +53,7 @@ module.exports = function(context, message, callBack){
 
         for (var i = 0; i < qtdExec; i++){
             (function(item){
-                item.module.exports({global:factory.global}, null, function(err, data){
+                item.module.exports(context, null, function(err, data){
                     var testInfo;
                     
                     if (err){
