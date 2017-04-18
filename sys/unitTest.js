@@ -74,7 +74,8 @@ module.exports = function(context, message, callBack){
                     resultTest.listResult.push(testInfo);
 
                     if (resultTest.listResult.length === qtdExec){
-                        diffTime = (process.hrtime(start)[1] / 1000);
+                        diffTime = process.hrtime(start);
+                        diffTime = ((diffTime[0] * 1e3) + (diffTime[1] / 1e6));
                         resultTest.time = diffTime;
 
                         callBack(null, resultTest);
