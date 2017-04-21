@@ -2,7 +2,7 @@ var functionsio = require("../");
 var app = null;
 var config = {};
 
-config.isGenerateStatistics = true;
+config.enableStatistics = true;
 config.unitTest = {};
 config.unitTest.load = false;
 config.unitTest.executeOnStart = false;

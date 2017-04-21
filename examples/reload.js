@@ -18,7 +18,7 @@ var callFunction = function(){
     }
 }
 
-config.isGenerateStatistics = true;
+config.enableStatistics = true;
 config.unitTest = {};
 config.unitTest.load = false;
 config.unitTest.executeOnStart = false;

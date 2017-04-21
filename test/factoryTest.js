@@ -4,7 +4,7 @@ var functionManager = null;
 var app = null;
 var config = {};
 
-config.isGenerateStatistics = false;
+config.enableStatistics = false;
 config.unitTest = {};
 config.unitTest.load = false;
 config.unitTest.executeOnStart = false;

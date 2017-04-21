@@ -41,7 +41,7 @@ var functionsio = require("functions-io-core");
 var app = null;
 var config = {};
 
-config.isGenerateStatistics = true;
+config.enableStatistics = true;
 config.unitTest = {};
 config.unitTest.load = false;
 config.unitTest.executeOnStart = false;
@@ -66,7 +66,8 @@ app.start(function(err){
 ```
 
 ## Options property
-* isGenerateStatistics (default: true)
+* enableStatistics (default: true)
+* enableSecurity (default: false)
 * unitTest
 * * load (default: true)
 * * executeOnStart (default: true)
