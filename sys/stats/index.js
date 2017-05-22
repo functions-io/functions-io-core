@@ -1,10 +1,5 @@
 "use strict";
 
-module.name = "sys.stats";
-module.category = "sys";
-module.summary = "statistic";
-module.description = "return statistic";
-
 module.input = {
     stage:{type:"string", required:false},
     name:{type:"string", required:false},
@@ -37,18 +32,18 @@ module.exports = function(context, message, callBack){
     var keys;
     var factory = module._factory;
 
-    keys = Object.keys(factory.listFunctionManager);
+    keys = Object.keys(factory.listFunctionManagerByFile);
 
     for (var i = 0; i < keys.length; i++){
-        item = factory.listFunctionManager[keys[i]];
+        item = factory.listFunctionManagerByFile[keys[i]];
 
         newItemStats = {};
-        newItemStats.category = item.module.category;
+        newItemStats.category = item.category;
         newItemStats.objectName = item.module.objectName;
         newItemStats.stage = item.stage;
         newItemStats.name = item.name;
         newItemStats.version = item.version;
-        newItemStats.summary = item.summary;
+        newItemStats.description = item.description;
         newItemStats.hits = item.hits;
         listStats.push(newItemStats);
     }

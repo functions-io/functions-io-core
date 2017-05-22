@@ -1,12 +1,6 @@
 "use strict";
 
-var libSum = require("/lib/_libSum");
-
-module.name = "sum";
-module.version = "v4";
-module.category = "test";
-module.summary = "sum";
-module.description = "sum x + y";
+var libSum = require("/lib/libSum");
 
 module.input = {
     x:{type:"integer", required:false, default: 10},

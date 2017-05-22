@@ -1,11 +1,5 @@
 "use strict";
 
-module.name = "subfolder.subfolder2.multiply";
-module.version = "v1";
-module.category = "test2";
-module.summary = "multiply";
-module.description = "multiply x * y";
-
 module.input = {
     x:{type:"integer", required:true},
     y:{type:"integer", required:false}

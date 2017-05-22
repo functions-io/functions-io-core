@@ -1,10 +1,5 @@
 "use strict";
 
-module.name = "sys.unitTest";
-module.category = "sys";
-module.summary = "run unit test";
-module.description = "run unit test";
-
 module.input = {
     name:{type:"string", required:false}
 };

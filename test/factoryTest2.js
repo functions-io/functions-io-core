@@ -20,8 +20,8 @@ app.start(function(err){
     }
     else{
         functionManager = app.factory.getFunctionManager(null, "sum", "v1");
-        assert.equal(functionManager.module.category, "test");
-        assert.equal(functionManager.module.description, "sum x + y");
+        assert.equal(functionManager.category, "test");
+        assert.equal(functionManager.description, "sum x + y");
         assert.equal(functionManager.module.input.x.type, "integer");
         assert.equal(functionManager.module.input.x.required, true);
         assert.equal(functionManager.module.input.y.type, "integer");

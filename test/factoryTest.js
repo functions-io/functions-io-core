@@ -20,15 +20,15 @@ app.start(function(err){
     }
     else{
         functionManager = app.factory.getFunctionManager(null, "sys.stats", null);
-        assert.equal(functionManager.module.category, "sys");
+        assert.equal(functionManager.category, "sys");
         assert.equal(typeof functionManager.module.exports, "function");
         functionManager.module.exports(null, {}, function(err, data){
             assert.equal(err, null);
         });
 
         functionManager = app.factory.getFunctionManager(null, "subfolder.subfolder2.sum", "v1");
-        assert.equal(functionManager.module.category, "test2");
-        assert.equal(functionManager.module.description, "sum x + y");
+        assert.equal(functionManager.category, "test2");
+        assert.equal(functionManager.description, "sum x + y");
         assert.equal(functionManager.module.input.x.type, "integer");
         assert.equal(functionManager.module.input.x.required, true);
         assert.equal(functionManager.module.input.y.type, "integer");
@@ -37,8 +37,8 @@ app.start(function(err){
         assert.equal(typeof functionManager.module.exports, "function");
 
         functionManager = app.factory.getFunctionManager(null, "subfolder.subfolder2.multiply", "v1");
-        assert.equal(functionManager.module.category, "test2");
-        assert.equal(functionManager.module.description, "multiply x * y");
+        assert.equal(functionManager.category, "test2");
+        assert.equal(functionManager.description, "multiply x * y");
         assert.equal(functionManager.module.input.x.type, "integer");
         assert.equal(functionManager.module.input.x.required, true);
         assert.equal(functionManager.module.input.y.type, "integer");
@@ -47,8 +47,8 @@ app.start(function(err){
         assert.equal(typeof functionManager.module.exports, "function");
 
         functionManager = app.factory.getFunctionManager(null, "subfolder.sum", "v1");
-        assert.equal(functionManager.module.category, "test");
-        assert.equal(functionManager.module.description, "sum x + y");
+        assert.equal(functionManager.category, "test");
+        assert.equal(functionManager.description, "sum x + y");
         assert.equal(functionManager.module.input.x.type, "integer");
         assert.equal(functionManager.module.input.x.required, true);
         assert.equal(functionManager.module.input.y.type, "integer");
@@ -57,8 +57,8 @@ app.start(function(err){
         assert.equal(typeof functionManager.module.exports, "function");
 
         functionManager = app.factory.getFunctionManager(null, "multiply", "v1");
-        assert.equal(functionManager.module.category, "test");
-        assert.equal(functionManager.module.description, "multiply x * y");
+        assert.equal(functionManager.category, "test");
+        assert.equal(functionManager.description, "multiply x * y");
         assert.equal(functionManager.module.input.x.type, "integer");
         assert.equal(functionManager.module.input.x.required, true);
         assert.equal(functionManager.module.input.y.type, "integer");
@@ -67,8 +67,8 @@ app.start(function(err){
         assert.equal(typeof functionManager.module.exports, "function");
 
         functionManager = app.factory.getFunctionManager(null, "sum", "v2");
-        assert.equal(functionManager.module.category, "test");
-        assert.equal(functionManager.module.description, "sum x + y");
+        assert.equal(functionManager.category, "test");
+        assert.equal(functionManager.description, "sum x + y");
         assert.equal(functionManager.module.input.x.type, "integer");
         assert.equal(functionManager.module.input.x.required, false);
         assert.equal(functionManager.module.input.y.type, "integer");
@@ -77,8 +77,8 @@ app.start(function(err){
         assert.equal(typeof functionManager.module.exports, "function");
 
         functionManager = app.factory.getFunctionManager(null, "sum", "v1");
-        assert.equal(functionManager.module.category, "test");
-        assert.equal(functionManager.module.description, "sum x + y");
+        assert.equal(functionManager.category, "test");
+        assert.equal(functionManager.description, "sum x + y");
         assert.equal(functionManager.module.input.x.type, "integer");
         assert.equal(functionManager.module.input.x.required, true);
         assert.equal(functionManager.module.input.y.type, "integer");
@@ -87,8 +87,8 @@ app.start(function(err){
         assert.equal(typeof functionManager.module.exports, "function");
 
         functionManager = app.factory.getFunctionManager(null, "sum", "v4");
-        assert.equal(functionManager.module.category, "test");
-        assert.equal(functionManager.module.description, "sum x + y");
+        assert.equal(functionManager.category, "test");
+        assert.equal(functionManager.description, "sum x + y");
         assert.equal(functionManager.module.input.x.type, "integer");
         assert.equal(functionManager.module.input.x.required, false);
         assert.equal(functionManager.module.input.y.type, "integer");

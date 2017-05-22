@@ -1,0 +1,12 @@
+{
+  "name": "subfolder.subfolder2.multiply",
+  "version": "v1",
+  "description": "multiply x * y",
+  "category": "test2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

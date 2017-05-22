@@ -1,10 +1,5 @@
 "use strict";
 
-module.name = "sys.functions";
-module.category = "sys";
-module.summary = "functions loaded";
-module.description = "return functions loaded";
-
 module.output = {
     list:{type:"array", required:true, items: {
         category:{type:"string", required:true},
@@ -30,12 +25,12 @@ module.exports = function(context, message, callBack){
 
         if ((item.module.category !== "sys") && (item.module.category !== "unitTest")){
             newItem = {};
-            newItem.category = item.module.category;
+            newItem.category = item.category;
             newItem.objectName = item.module.objectName;
             newItem.stage = item.stage;
             newItem.name = item.name;
             newItem.version = item.version;
-            newItem.summary = item.summary;
+            newItem.description = item.description;
 
             listFunctions.push(newItem);
         }

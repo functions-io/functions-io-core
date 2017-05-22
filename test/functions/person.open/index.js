@@ -2,12 +2,6 @@
 
 //types => integer, long, float, double, string, byte, binary, boolean, date, dateTime, password
 
-module.name = "person.open";
-module.version = "v1";
-module.category = "test";
-module.summary = "open person";
-module.description = "open person";
-
 module.input = {
     code:{type:"integer", required:true}
 };

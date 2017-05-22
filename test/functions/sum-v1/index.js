@@ -1,9 +1,5 @@
 "use strict";
 
-module.category = "test2";
-module.summary = "sum";
-module.description = "sum x + y";
-
 module.input = {
     x:{type:"integer", required:true},
     y:{type:"integer", required:true}

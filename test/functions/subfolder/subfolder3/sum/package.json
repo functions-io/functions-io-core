@@ -1,0 +1,12 @@
+{
+  "name": "subfolder.subfolder3.sum",
+  "version": "v1",
+  "description": "sum x + y",
+  "category": "test2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
