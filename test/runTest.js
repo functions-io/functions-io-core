@@ -1,8 +1,12 @@
 try{
     console.log("Run test...");
-    require("./inputValidateTest");
-    require("./factoryTest");
-    require("./factoryUnitTest");
+    
+    require("./functionManager");
+    require("./functionManager_stats");
+    require("./functionManager_invoke");
+    require("./inputValidate");
+    require("./functionManager_invoke_test");
+    
     console.log("Ok");
 }
 catch(err){
