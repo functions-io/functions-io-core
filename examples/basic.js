@@ -9,7 +9,7 @@ app.start(function(err){
         console.error(err);
     }
     else{
-        app.factory.invoke(null, "sum", "v1", {x:2,y:3}, null, function(err, data){
+        app.factory.invoke(null, "sum", "1.0.0", {x:2,y:3}, null, function(err, data){
             if (err){
                 console.error("err in invoke - " + err);
             }

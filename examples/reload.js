@@ -4,7 +4,7 @@ var config = {};
 
 var callFunction = function(){
     try{
-        app.factory.invoke(null, "subfolder.subfolder3.sum", "v1", {x:2,y:3}, null, function(err, data){
+        app.factory.invoke(null, "subfolder.subfolder3.sum", "1.0.0", {x:2,y:3}, null, function(err, data){
             if (err){
                 console.error("err in invoke subfolder.subfolder3.sum-v1 -> " + err);
             }
