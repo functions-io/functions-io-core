@@ -19,17 +19,17 @@ app.start(function(err, dataScan){
         console.error(err);
     }
     else{
-        functionManager = app.factory.getFunctionManager("_test", "sum", "v1");
+        functionManager = app.factory.getFunctionManager("_test", "sum", "1.0.0");
         assert.equal(typeof functionManager.module.test, "object");
         assert.equal(typeof functionManager.module.exports, "function");
         
-        app.factory.invoke("_test", "sum", "v1", null, null, function(err, data){
+        app.factory.invoke("_test", "sum", "1.0.0", null, null, function(err, data){
             assert.equal(err, null);
             assert.strictEqual(data.success, true);
             //console.log(data);
         });
         
-        app.factory.invoke("_test", "multiply", "v1", null, null, function(err, data){
+        app.factory.invoke("_test", "multiply", "1.0.0", null, null, function(err, data){
             assert.equal(err, null);
             assert.strictEqual(data.success, true);
             //console.log(data);

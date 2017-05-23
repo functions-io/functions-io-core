@@ -1,6 +1,6 @@
 {
   "name": "sum",
-  "version": "v3",
+  "version": "2.0.0",
   "description": "sum x + y",
   "category": "test",
   "main": "index.js",

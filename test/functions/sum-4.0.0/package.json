@@ -1,8 +1,8 @@
 {
-  "name": "subfolder.subfolder3.sum",
-  "version": "1.0.0",
+  "name": "sum",
+  "version": "4.0.0",
   "description": "sum x + y",
-  "category": "test2",
+  "category": "test",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

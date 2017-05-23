@@ -1,6 +1,6 @@
 {
   "name": "subfolder.subfolder2.multiply",
-  "version": "v1",
+  "version": "1.0.0",
   "description": "multiply x * y",
   "category": "test2",
   "main": "index.js",

@@ -1,6 +1,6 @@
 {
   "name": "person.list",
-  "version": "v1",
+  "version": "1.0.0",
   "description": "list persons",
   "category": "test",
   "main": "index.js",
