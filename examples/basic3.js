@@ -3,9 +3,9 @@ var app = null;
 var config = {};
 
 config.enableStatistics = true;
-config.unitTest = {};
-config.unitTest.load = false;
-config.unitTest.executeOnStart = false;
+config.test = {};
+config.test.load = false;
+config.test.executeOnStart = false;
 
 app = functionsio.createServer(config);
 app.pathFunctions = __dirname + "/../test/functions";

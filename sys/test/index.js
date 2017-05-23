@@ -79,7 +79,7 @@ module.exports = function(context, message, callBack){
             })(listExec[i]);
         }
     }
-    catch(errUnitTest){
-        callBack(errUnitTest);
+    catch(errTest){
+        callBack(errTest);
     }
 };

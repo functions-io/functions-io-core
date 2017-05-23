@@ -5,9 +5,9 @@ var app = null;
 var config = {};
 
 config.enableStatistics = false;
-config.unitTest = {};
-config.unitTest.load = false;
-config.unitTest.executeOnStart = false;
+config.test = {};
+config.test.load = false;
+config.test.executeOnStart = false;
 config.scan = {};
 config.scan.automatic = false;
 

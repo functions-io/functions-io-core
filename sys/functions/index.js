@@ -23,7 +23,7 @@ module.exports = function(context, message, callBack){
     for (var i = 0; i < keys.length; i++){
         item = factory.listFunctionManager[keys[i]];
 
-        if ((item.module.category !== "sys") && (item.module.category !== "unitTest")){
+        if ((item.module.category !== "sys") && (item.module.stage !== "_test")){
             newItem = {};
             newItem.category = item.category;
             newItem.objectName = item.module.objectName;
