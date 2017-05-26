@@ -18,10 +18,10 @@ module.exports = function(context, message, callBack){
     var keys;
     var factory = module._factory;
 
-    keys = Object.keys(factory.listFunctionManager);
+    keys = Object.keys(factory.listFunctionManagerByFile);
 
     for (var i = 0; i < keys.length; i++){
-        item = factory.listFunctionManager[keys[i]];
+        item = factory.listFunctionManagerByFile[keys[i]];
 
         if ((item.module.category !== "sys") && (item.module.stage !== "_test")){
             newItem = {};

@@ -23,17 +23,12 @@ module.exports = function(context, message, callBack){
         resultTest.success = true;
         resultTest.listResult = [];
 
-        keys = Object.keys(factory.listFunctionManager);
+        keys = Object.keys(factory.listFunctionManagerByFile);
 
         for (var i_function = 0; i_function < keys.length; i_function++){
-            functionManager = factory.listFunctionManager[keys[i_function]];
+            functionManager = factory.listFunctionManagerByFile[keys[i_function]];
             if ((functionManager.stage) && (functionManager.stage === "_test")){
-                if (functionManager.module.isManualTest){
-                    //test not automatic
-                }
-                else{
-                    listExec.push(functionManager);
-                }
+                listExec.push(functionManager);
             }
         }
 
