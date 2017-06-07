@@ -6,7 +6,8 @@ try{
     require("./functionManager_invoke");
     require("./inputValidate");
     require("./functionManager_invoke_test");
-    
+    require("./functionManager_invoke_test2");
+
     console.log("Ok");
 }
 catch(err){
