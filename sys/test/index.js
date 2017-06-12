@@ -18,6 +18,18 @@ module.exports = function(context, message, callBack){
     var functionManager;
     var qtdExec;
     var factory = module._factory;
+    var diffTime = 0;
+    var start = process.hrtime();
+
+    function checkEndTest(){
+        if (resultTest.listResult.length === qtdExec){
+            diffTime = process.hrtime(start);
+            diffTime = ((diffTime[0] * 1e3) + (diffTime[1] / 1e6));
+            resultTest.time = diffTime;
+
+            callBack(null, resultTest);
+        }
+    }
 
     try{
         resultTest.success = true;
@@ -31,46 +43,52 @@ module.exports = function(context, message, callBack){
                 listExec.push(functionManager);
             }
         }
-
         qtdExec = listExec.length;
-
         if (qtdExec === 0){
             callBack(null, resultTest);
+            return;
         }
-
-        var diffTime = 0;
-        var start = process.hrtime();
 
         for (var i = 0; i < qtdExec; i++){
             (function(item){
-                item.module.exports(context, null, function(err, data){
+                try{
+                    console.log("executing test function " + item.name);
+                    item.module.exports(context, null, function(err, data){
+                        var testInfo;
+                        console.log("end test function " + item.name);
+                        if (err){
+                            testInfo = {};
+                            testInfo.success = false;
+                            testInfo.error = err.message;
+                            testInfo.listResult = [];
+                        }
+                        else{
+                            testInfo = data;
+                        }
+
+                        if (testInfo.success === false){
+                            resultTest.success = false;
+                        }
+
+                        testInfo.name = item.name;
+                        resultTest.total += testInfo.listResult.length;
+                        resultTest.listResult.push(testInfo);
+
+                        checkEndTest();
+                    });
+                }
+                catch(errTest){
                     var testInfo;
-                    
-                    if (err){
-                        testInfo = {};
-                        testInfo.success = false;
-                        result.listResult = [];
-                    }
-                    else{
-                        testInfo = data;
-                    }
-
-                    if (testInfo.success === false){
-                        resultTest.success = false;
-                    }
-
+                    testInfo = {};
+                    testInfo.success = false;
+                    testInfo.error = err.message;
+                    testInfo.listResult = [];
                     testInfo.name = item.name;
-                    resultTest.total += testInfo.listResult.length;
                     resultTest.listResult.push(testInfo);
+                    resultTest.success = false;
 
-                    if (resultTest.listResult.length === qtdExec){
-                        diffTime = process.hrtime(start);
-                        diffTime = ((diffTime[0] * 1e3) + (diffTime[1] / 1e6));
-                        resultTest.time = diffTime;
-
-                        callBack(null, resultTest);
-                    }
-                });
+                    checkEndTest();
+                }
             })(listExec[i]);
         }
     }
