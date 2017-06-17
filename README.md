@@ -98,3 +98,6 @@ app.start(function(err){
 * scan
 * * automatic (default: true)
 * * interval (default: 2000)
+
+## Events
+* functions-io.start
