@@ -5,10 +5,7 @@ Minimalist functional framework for [node](http://nodejs.org).
 
 ## Features
   * Focus on high performance
-  * Auto reload change in javascript files
   * Input/Output with automatic validation
-  * Test or Unit Test with automatic execution
-  * Statistics - access, error, abort, time
 
 ## Installation
 ```bash
@@ -53,11 +50,6 @@ var functionsio = require("functions-io-core");
 var app = null;
 var config = {};
 
-config.enableStatistics = true;
-config.test = {};
-config.test.load = false;
-config.test.executeOnStart = false;
-
 app = functionsio.createServer(config);
 
 app.start(function(err){
@@ -89,15 +81,8 @@ app.start(function(err){
 }
 ```
 
-## Options functionsio.createServer(config)
-* enableStatistics (default: true)
-* enableSecurity (default: false)
-* test
-* * load (default: true)
-* * executeOnStart (default: true)
-* scan
-* * automatic (default: true)
-* * interval (default: 2000)
-
 ## Events
-* functions-io.start
+* PRE_INVOKE
+* POS_INVOKE
+* PRE_LOAD_FUNCTION
+* POS_UNLOAD_FUNCTION

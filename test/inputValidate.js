@@ -1,5 +1,5 @@
 var assert = require("assert");
-var InputValidate = require("../lib/factory/InputValidate");
+var InputValidate = require("../lib/InputValidate");
 var inputValidate = new InputValidate();
 var now = new Date();
 

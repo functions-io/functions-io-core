@@ -1,6 +1,6 @@
 {
   "name": "functions-io-core",
-  "version": "0.2.10",
+  "version": "0.3.0",
   "description": "Functional Micro Framework - Core",
   "main": "lib/index.js",
   "readmeFilename": "README.md",
@@ -20,7 +20,7 @@
   "dependencies": {},
   "devDependencies": {},
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=4.0.0"
   },
   "author": {
     "name": "Rogério Dias Moreira",

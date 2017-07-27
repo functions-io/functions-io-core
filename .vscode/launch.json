@@ -18,8 +18,7 @@
                 "NODE_ENV": "development"
             },
             "console": "integratedTerminal",
-            "sourceMaps": false,
-            "outDir": null
+            "sourceMaps": false
         },
         {
             "name": "Test",
@@ -48,7 +47,6 @@
             "address": "localhost",
             "restart": false,
             "sourceMaps": false,
-            "outDir": null,
             "localRoot": "${workspaceRoot}",
             "remoteRoot": null
         }
