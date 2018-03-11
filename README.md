@@ -44,45 +44,17 @@ module.exports = function(context, message, callBack){
 };
 ```
 
-### Start Server
+### Example
 ```javascript
-var functionsio = require("functions-io-core");
-var app = null;
-var config = {};
+const functionsio = require("functions-io-core");
+const moduleFactory = functionsio.buildModuleFactory();
 
-app = functionsio.createServer(config);
-
-app.start(function(err){
-    if (err){
-        console.error(err);
-    }
-    else{
-        app.factory.invoke(null, "sum", "v1", {x:2,y:3}, null, function(err, data){
-            if (err){
-                console.error("err in invoke - " + err);
-            }
-            else{
-                console.log("Call sum(2, 3) = " + data.value);
-            }
-        });
-    }
-});
+moduleFactory.requireAsync("uuid", "3.2.1")
+    .then(function(module){
+        console.log("module", module.v4());
+        console.log("module", module.v4());
+        console.log("module", module.v4());
+    }).catch(function(err){
+        console.log("erro", err);
+    });
 ```
-
-## example full package.json
-```json
-{
-  "name": "multiply",
-  "version": "1.0.0",
-  "description": "multiply x * y",
-  "category": "test",
-  "main": "index.js",
-  "test": "test.js",
-}
-```
-
-## Events
-* PRE_INVOKE
-* POS_INVOKE
-* PRE_LOAD_FUNCTION
-* POS_UNLOAD_FUNCTION
