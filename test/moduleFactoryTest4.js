@@ -1,5 +1,5 @@
-var functionsio = require("../");
-var moduleFactory = functionsio.buildModuleFactory();
+const functionsio = require("../");
+const moduleFactory = functionsio.buildModuleFactory();
 
 moduleFactory.requireAsync("mongodb", "3")
     .then(function(mongodb){

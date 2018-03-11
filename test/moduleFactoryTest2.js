@@ -1,5 +1,5 @@
-var functionsio = require("../");
-var moduleFactory = functionsio.buildModuleFactory();
+const functionsio = require("../");
+const moduleFactory = functionsio.buildModuleFactory();
 
 moduleFactory.requireAsync("uuid", "3.2.1")
     .then(function(module){
