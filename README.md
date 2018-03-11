@@ -46,8 +46,7 @@ module.exports = function(context, message, callBack){
 
 ### Example
 ```javascript
-const functionsio = require("functions-io-core");
-const moduleFactory = functionsio.buildModuleFactory();
+const moduleFactory = require("functions-io-core").buildModuleFactory();
 
 moduleFactory.requireAsync("uuid", "3.2.1")
     .then(function(module){
