@@ -1,6 +1,6 @@
 {
   "name": "functions-io-core",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Functional Micro Framework - Core",
   "main": "lib/index.js",
   "readmeFilename": "README.md",
@@ -17,7 +17,9 @@
     "type": "git",
     "url": "https://github.com/functions-io/functions-io-core.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "semver": "^5.5.0"
+  },
   "devDependencies": {},
   "engines": {
     "node": ">=4.0.0"

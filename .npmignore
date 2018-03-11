@@ -1,4 +1,6 @@
 examples
-/test
+test
 .vscode
+.eslintrc.js
 yarn.lock
+package-lock.json
