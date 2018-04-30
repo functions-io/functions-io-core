@@ -1,6 +1,9 @@
 examples
 test
+labs
 .vscode
 .eslintrc.js
 yarn.lock
 package-lock.json
+performance.md
+temp.md
