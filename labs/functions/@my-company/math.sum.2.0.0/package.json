@@ -1,14 +1,11 @@
 {
-  "name": "@my-company/service.math.multiply",
-  "version": "1.0.0",
-  "description": "multiply x * y",
+  "name": "@my-company/math.sum",
+  "version": "2.0.0",
+  "description": "sum x + y",
   "category": "test",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "@my-company/math.multiply": "^1.0.0"
   },
   "publishConfig": {
     "registry":"https://localhost:3000"
