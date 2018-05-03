@@ -1,0 +1,19 @@
+{
+  "name": "@my-company/service.math",
+  "version": "1.0.0",
+  "description": "math functions",
+  "category": "test",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@my-company/math.sum": "^1.0.0",
+    "@my-company/math.multiply": "^1.0.0"
+  },
+  "publishConfig": {
+    "registry":"https://localhost:3000"
+  },
+  "author": "",
+  "license": "ISC"
+}
