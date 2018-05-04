@@ -1,5 +1,6 @@
 "use strict";
 
+
 const http2 = require("http2");
 const urlParse = require("url");
 const config = require("../lib/config");
@@ -20,18 +21,34 @@ optionRequest[":path"] = option.path;
 //let client = http2.connect('http://localhost:8000');
 let client = http2.connect(option.url, {rejectUnauthorized:false});
 
-http_request = client.request(optionRequest);
-http_request.on("response", function(responseHeaders) {
-    console.log("response", responseHeaders);
-});
-http_request.on("data", function(chunk) {
-    data.push(chunk);
-});
-http_request.on("end", function(){
-    var buffer = Buffer.concat(data);
-    console.log(buffer);
-    client.destroy();
+function request(client, optionRequest, callBack){
+    let http_request = client.request(optionRequest);
+    let responseHeaders = null;
+    http_request.on("response", function(responseHeaders) {
+        console.log("response", responseHeaders);
+    });
+    http_request.on("data", function(chunk) {
+        data.push(chunk);
+    });
+    http_request.on("end", function(){
+        var buffer = Buffer.concat(data);
+        callBack(null, buffer);
+    })
+}
+
+request(client, optionRequest, function(err, data){
+    var fs = require("fs");
+    fs.writeFileSync("/tmp/teste1.tgz", data);
+    console.log(err, data);
 })
+request(client, optionRequest, function(err, data){
+    console.log(err, data);
+})
+
+/*
+client.close();
+client.destroy();
+*/
 
 /*
 var request = http_request.request(option, function(response) {

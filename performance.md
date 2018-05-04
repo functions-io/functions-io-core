@@ -4,7 +4,7 @@ docker run --privileged --name lab1 -d mathsum
 sudo perf stat docker start lab1
 sudo perf stat node labs/functions/@my-company/math.sum/test/index.js
 
-time docker start lab1
+time docker start lab1S
 ```
 
 * time node labs/functions/@my-company/math.sum/test/index.js
@@ -79,26 +79,28 @@ time docker start lab1
 * * Média: 925
 * * Desvio padrão: 124.54
 
-* com nodejs carregado
-9,
-13,
-10,
-8,
-9,
-9,
-10,
-9,
-10,
-10,
-9,
-11,
-9,
-9,
-9,
-9,
-9,
-9,
-9,
-10
-* * Média: 9.5
-* * Desvio padrão: 1.05
+#BAIXO
+* 1 USUÁRIO + BAIXO
+* * HTTP -> 7 ms; 173 req/s
+* * HTTP2 -> 4 ms; 260 req/s
+
+* 10 USUÁRIO + BAIXO
+* * HTTP -> 40 ms; 298 req/s
+* * HTTP2 -> 26 ms; 466 req/s
+
+* 20 USUÁRIO + BAIXO
+* * HTTP -> 74 ms; 313 req/s
+* * HTTP2 -> 50 ms; 485 req/s
+
+#ALTO
+* 1 USUÁRIO + ALTO
+* * HTTP -> 10ms; 119 req/s
+* * HTTP2 -> 7ms; 154 req/s
+
+* 10 USUÁRIO + ALTO
+* * HTTP -> 59 ms; 202 req/s
+* * HTTP2 -> 52 ms; 233 req/s
+
+* 20 USUÁRIO + ALTO
+* * HTTP -> 107 ms; 216 req/s
+* * HTTP2 -> 93 ms; 247 req/s
