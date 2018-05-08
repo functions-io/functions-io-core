@@ -1,0 +1,18 @@
+{
+  "name": "@performance2/service.math.0",
+  "version": "1.0.0",
+  "description": "math functions",
+  "category": "test",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    
+  },
+  "publishConfig": {
+    "registry":"https://159.65.165.194:8443"
+  },
+  "author": "",
+  "license": "ISC"
+}
