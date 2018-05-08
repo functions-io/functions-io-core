@@ -1,0 +1,15 @@
+{
+  "name": "@performance1/math.sum.12",
+  "version": "1.0.0",
+  "description": "sum x + y",
+  "category": "test",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry":"https://159.65.165.194:8443"
+  },
+  "author": "",
+  "license": "ISC"
+}
