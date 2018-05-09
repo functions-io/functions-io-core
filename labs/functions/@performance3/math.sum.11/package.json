@@ -1,0 +1,18 @@
+{
+  "name": "@performance3/math.sum.11",
+  "version": "1.0.0",
+  "description": "sum x + y",
+  "category": "test",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bson": "^1.0.6"
+  },
+  "publishConfig": {
+    "registry":"https://159.65.165.194:8443"
+  },
+  "author": "",
+  "license": "ISC"
+}
