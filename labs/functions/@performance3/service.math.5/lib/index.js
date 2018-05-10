@@ -1,10 +1,10 @@
 "use strict";
 
-const mathSum1 = require("@performance1/math.sum.1");
-const mathSum2 = require("@performance1/math.sum.2");
-const mathSum3 = require("@performance1/math.sum.3");
-const mathSum4 = require("@performance1/math.sum.4");
-const mathSum5 = require("@performance1/math.sum.5");
+const mathSum1 = require("@performance3/math.sum.1");
+const mathSum2 = require("@performance3/math.sum.2");
+const mathSum3 = require("@performance3/math.sum.3");
+const mathSum4 = require("@performance3/math.sum.4");
+const mathSum5 = require("@performance3/math.sum.5");
 
 module.exports.sum = function(x,y){
     mathSum5(2,3);

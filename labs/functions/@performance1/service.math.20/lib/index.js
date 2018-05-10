@@ -28,5 +28,19 @@ module.exports.sum = function(x,y){
     mathSum17(2,3);
     mathSum16(2,3);
     mathSum15(2,3);
+    mathSum14(2,3);
+    mathSum13(2,3);
+    mathSum12(2,3);
+    mathSum11(2,3);
+    mathSum10(2,3);
+    mathSum9(2,3);
+    mathSum8(2,3);
+    mathSum7(2,3);
+    mathSum6(2,3);
+    mathSum5(2,3);
+    mathSum4(2,3);
+    mathSum3(2,3);
+    mathSum2(2,3);
+    mathSum1(2,3);
     return x + y;
 }
