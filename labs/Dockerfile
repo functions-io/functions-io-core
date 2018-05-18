@@ -4,4 +4,4 @@ ADD ./functions /
 
 EXPOSE 8080
 
-CMD [ "node", "@my-company/math.sum/test/index.js" ]
+CMD [ "node", "@performance1/math.sum.1/test/index.js" ]
