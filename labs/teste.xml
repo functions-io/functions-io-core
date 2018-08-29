@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="urn:mpeg:DASH:schema:MPD:2011"
+    xmlns:yt="http://youtube.com/yt/2012/10/10" xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 DASH-MPD.xsd" minBufferTime="PT1.500S" profiles="urn:mpeg:dash:profile:isoff-main:2011" type="static" mediaPresentationDuration="PT522.495S">
+    <Period>
+        <AdaptationSet id="0" mimeType="audio/mp4" subsegmentAlignment="true">
+            <Role schemeIdUri="urn:mpeg:DASH:role:2011" value="main"/>
+            <SegmentList startNumber="0" timescale="1000">
+                <SegmentTimeline>
+                    <S d="10031"/>
+                    <S d="9985"/>
+                    <S d="9984"/>
+                    <S d="10031"/>
+                    <S d="9985"/>
+                    <S d="9984"/>
+                    <S d="10031"/>
+                    <S d="9985" r="1"/>
+                    <S d="10031"/>
+                    <S d="9984"/>
+                    <S d="9985"/>
+                    <S d="10031"/>
+                    <S d="9984"/>
+                    <S d="9985"/>
+                    <S d="10031"/>
+                    <S d="9985"/>
+                    <S d="9984"/>
+                    <S d="10031"/>
+                    <S d="9985"/>
+                    <S d="9984"/>
+                    <S d="10031"/>
+                    <S d="9985"/>
+                    <S d="9984"/>
+                    <S d="10031"/>
+                    <S d="9985" r="1"/>
+                    <S d="10031"/>
+                    <S d="9984"/>
+                    <S d="9985"/>
+                    <S d="10031"/>
+                    <S d="9984"/>
+                    <S d="9985"/>
+                    <S d="10031"/>
+                    <S d="9985"/>
+                    <S d="9984"/>
+                    <S d="10031"/>
+                    <S d="9985"/>
+                    <S d="9984"/>
+                    <S d="10031"/>
+                    <S d="9985" r="1"/>
+                    <S d="10031"/>
+                    <S d="9984"/>
+                    <S d="9985"/>
+                    <S d="10031"/>
+                    <S d="9984"/>
+                    <S d="9985"/>
+                    <S d="10031"/>
+                    <S d="9984"/>
+                    <S d="9985"/>
+                    <S d="10031"/>
+                    <S d="2461"/>
+                </SegmentTimeline>
+            </SegmentList>
+            <Representation id="139" codecs="mp4a.40.5" audioSamplingRate="22050" startWithSAP="1" bandwidth="48568">
+                <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+                <BaseURL>https://r5---sn-oxunxg8pjvn-cncl.googlevideo.com/videoplayback/id/dd62257575bc8acb/itag/139/source/youtube/requiressl/yes/initcwndbps/581250/ei/eaAAW-DMEILXxATm5aOICg/mn/sn-oxunxg8pjvn-cncl,sn-hp57kn6e/mm/31,29/pl/48/mv/m/ms/au,rdu/ratebypass/yes/mime/audio%2Fmp4/otfp/1/gir/yes/clen/3107780/lmt/1387713243212476/dur/522.495/fvip/5/mt/1526767597/cpn/avj9zzgCO8rle_RN/mpd_version/5/ip/2804:14c:65d6:5b08:b8a5:2f34:66d1:1b19/ipbits/0/expire/1526789337/sparams/ip,ipbits,expire,id,itag,source,requiressl,initcwndbps,ei,mn,mm,pl,mv,ms,ratebypass,mime,otfp,gir,clen,lmt,dur/signature/29320ECD4A705EF14DC93DE1CB978493891357E0.44627F40824B1B8CA1CDEAF7750BAC4F17F421D7/key/dg_yt0/</BaseURL>
+                <SegmentList>
+                    <Initialization sourceURL="range/0-592"/>
+                    <SegmentURL media="range/1261-60898"/>
+                    <SegmentURL media="range/60899-120455"/>
+                    <SegmentURL media="range/120456-179765"/>
+                    <SegmentURL media="range/179766-239749"/>
+                    <SegmentURL media="range/239750-298822"/>
+                    <SegmentURL media="range/298823-358208"/>
+                    <SegmentURL media="range/358209-417892"/>
+                    <SegmentURL media="range/417893-477197"/>
+                    <SegmentURL media="range/477198-536466"/>
+                    <SegmentURL media="range/536467-596223"/>
+                    <SegmentURL media="range/596224-655416"/>
+                    <SegmentURL media="range/655417-714817"/>
+                    <SegmentURL media="range/714818-774479"/>
+                    <SegmentURL media="range/774480-834038"/>
+                    <SegmentURL media="range/834039-893147"/>
+                    <SegmentURL media="range/893148-952972"/>
+                    <SegmentURL media="range/952973-1012246"/>
+                    <SegmentURL media="range/1012247-1071565"/>
+                    <SegmentURL media="range/1071566-1131356"/>
+                    <SegmentURL media="range/1131357-1190706"/>
+                    <SegmentURL media="range/1190707-1249968"/>
+                    <SegmentURL media="range/1249969-1309705"/>
+                    <SegmentURL media="range/1309706-1368928"/>
+                    <SegmentURL media="range/1368929-1428425"/>
+                    <SegmentURL media="range/1428426-1487947"/>
+                    <SegmentURL media="range/1487948-1547321"/>
+                    <SegmentURL media="range/1547322-1606641"/>
+                    <SegmentURL media="range/1606642-1666369"/>
+                    <SegmentURL media="range/1666370-1725615"/>
+                    <SegmentURL media="range/1725616-1784960"/>
+                    <SegmentURL media="range/1784961-1844619"/>
+                    <SegmentURL media="range/1844620-1904018"/>
+                    <SegmentURL media="range/1904019-1963426"/>
+                    <SegmentURL media="range/1963427-2023032"/>
+                    <SegmentURL media="range/2023033-2082497"/>
+                    <SegmentURL media="range/2082498-2141834"/>
+                    <SegmentURL media="range/2141835-2201407"/>
+                    <SegmentURL media="range/2201408-2260718"/>
+                    <SegmentURL media="range/2260719-2320176"/>
+                    <SegmentURL media="range/2320177-2379733"/>
+                    <SegmentURL media="range/2379734-2439071"/>
+                    <SegmentURL media="range/2439072-2498478"/>
+                    <SegmentURL media="range/2498479-2558292"/>
+                    <SegmentURL media="range/2558293-2617452"/>
+                    <SegmentURL media="range/2617453-2676927"/>
+                    <SegmentURL media="range/2676928-2736535"/>
+                    <SegmentURL media="range/2736536-2795861"/>
+                    <SegmentURL media="range/2795862-2855238"/>
+                    <SegmentURL media="range/2855239-2914802"/>
+                    <SegmentURL media="range/2914803-2974259"/>
+                    <SegmentURL media="range/2974260-3033596"/>
+                    <SegmentURL media="range/3033597-3093230"/>
+                    <SegmentURL media="range/3093231-3107779"/>
+                </SegmentList>
+            </Representation>
+            <Representation id="140" codecs="mp4a.40.2" audioSamplingRate="44100" startWithSAP="1" bandwidth="128261">
+                <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+                <BaseURL>https://r5---sn-oxunxg8pjvn-cncl.googlevideo.com/videoplayback/id/dd62257575bc8acb/itag/140/source/youtube/requiressl/yes/initcwndbps/581250/ei/eaAAW-DMEILXxATm5aOICg/mn/sn-oxunxg8pjvn-cncl,sn-hp57kn6e/mm/31,29/pl/48/mv/m/ms/au,rdu/ratebypass/yes/mime/audio%2Fmp4/otfp/1/gir/yes/clen/8297506/lmt/1387713243559183/dur/522.402/fvip/5/mt/1526767597/cpn/avj9zzgCO8rle_RN/mpd_version/5/ip/2804:14c:65d6:5b08:b8a5:2f34:66d1:1b19/ipbits/0/expire/1526789337/sparams/ip,ipbits,expire,id,itag,source,requiressl,initcwndbps,ei,mn,mm,pl,mv,ms,ratebypass,mime,otfp,gir,clen,lmt,dur/signature/6AAC184AD8247440A295A915B11A75CC1FB0B6E9.10B5965648FCBDC93A445509E5F2F74049C04042/key/dg_yt0/</BaseURL>
+                <SegmentList>
+                    <Initialization sourceURL="range/0-591"/>
+                    <SegmentURL media="range/1260-160454"/>
+                    <SegmentURL media="range/160455-319250"/>
+                    <SegmentURL media="range/319251-477723"/>
+                    <SegmentURL media="range/477724-636794"/>
+                    <SegmentURL media="range/636795-795578"/>
+                    <SegmentURL media="range/795579-954263"/>
+                    <SegmentURL media="range/954264-1113050"/>
+                    <SegmentURL media="range/1113051-1272121"/>
+                    <SegmentURL media="range/1272122-1430576"/>
+                    <SegmentURL media="range/1430577-1589471"/>
+                    <SegmentURL media="range/1589472-1748403"/>
+                    <SegmentURL media="range/1748404-1906999"/>
+                    <SegmentURL media="range/1907000-2065898"/>
+                    <SegmentURL media="range/2065899-2224919"/>
+                    <SegmentURL media="range/2224920-2383438"/>
+                    <SegmentURL media="range/2383439-2542457"/>
+                    <SegmentURL media="range/2542458-2701335"/>
+                    <SegmentURL media="range/2701336-2859853"/>
+                    <SegmentURL media="range/2859854-3018780"/>
+                    <SegmentURL media="range/3018781-3177725"/>
+                    <SegmentURL media="range/3177726-3336247"/>
+                    <SegmentURL media="range/3336248-3495221"/>
+                    <SegmentURL media="range/3495222-3654196"/>
+                    <SegmentURL media="range/3654197-3812779"/>
+                    <SegmentURL media="range/3812780-3971819"/>
+                    <SegmentURL media="range/3971820-4130546"/>
+                    <SegmentURL media="range/4130547-4289138"/>
+                    <SegmentURL media="range/4289139-4448095"/>
+                    <SegmentURL media="range/4448096-4607011"/>
+                    <SegmentURL media="range/4607012-4765641"/>
+                    <SegmentURL media="range/4765642-4924576"/>
+                    <SegmentURL media="range/4924577-5083448"/>
+                    <SegmentURL media="range/5083449-5242079"/>
+                    <SegmentURL media="range/5242080-5400994"/>
+                    <SegmentURL media="range/5400995-5559840"/>
+                    <SegmentURL media="range/5559841-5718446"/>
+                    <SegmentURL media="range/5718447-5877428"/>
+                    <SegmentURL media="range/5877429-6036245"/>
+                    <SegmentURL media="range/6036246-6194924"/>
+                    <SegmentURL media="range/6194925-6353762"/>
+                    <SegmentURL media="range/6353763-6512672"/>
+                    <SegmentURL media="range/6512673-6671235"/>
+                    <SegmentURL media="range/6671236-6830264"/>
+                    <SegmentURL media="range/6830265-6989183"/>
+                    <SegmentURL media="range/6989184-7147755"/>
+                    <SegmentURL media="range/7147756-7306639"/>
+                    <SegmentURL media="range/7306640-7465526"/>
+                    <SegmentURL media="range/7465527-7624144"/>
+                    <SegmentURL media="range/7624145-7783062"/>
+                    <SegmentURL media="range/7783063-7941953"/>
+                    <SegmentURL media="range/7941954-8100521"/>
+                    <SegmentURL media="range/8100522-8259557"/>
+                    <SegmentURL media="range/8259558-8297505"/>
+                </SegmentList>
+            </Representation>
+        </AdaptationSet>
+        <AdaptationSet id="1" mimeType="video/mp4" subsegmentAlignment="true">
+            <Role schemeIdUri="urn:mpeg:DASH:role:2011" value="main"/>
+            <SegmentList startNumber="0" timescale="1000">
+                <SegmentTimeline>
+                    <S d="5005"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="5005" r="1"/>
+                    <S d="5006"/>
+                    <S d="1752"/>
+                </SegmentTimeline>
+            </SegmentList>
+            <Representation id="133" codecs="avc1.4d400c" width="426" height="240" startWithSAP="1" maxPlayoutRate="1" bandwidth="242000" frameRate="24">
+                <BaseURL>https://r5---sn-oxunxg8pjvn-cncl.googlevideo.com/videoplayback/id/dd62257575bc8acb/itag/133/source/yt_otf/requiressl/yes/initcwndbps/581250/ei/eaAAW-DMEILXxATm5aOICg/mn/sn-oxunxg8pjvn-cncl,sn-hp57kn6e/mm/31,29/pl/48/mv/m/ms/au,rdu/ratebypass/yes/mime/video%2Fmp4/otfp/1/otf/1/lmt/1465381371693388/fvip/5/mt/1526767597/cpn/avj9zzgCO8rle_RN/mpd_version/5/ip/2804:14c:65d6:5b08:b8a5:2f34:66d1:1b19/ipbits/0/expire/1526789337/sparams/ip,ipbits,expire,id,itag,source,requiressl,initcwndbps,ei,mn,mm,pl,mv,ms,ratebypass,mime,otfp,otf,lmt/signature/349313EF85522AF8DE4C8B9BAC6B0B93EBCD9860.92CC8E31058E580BEF7D03D43F442AE278AB05C8/key/dg_yt0/</BaseURL>
+                <SegmentList>
+                    <Initialization sourceURL="sq/0"/>
+                    <SegmentURL media="sq/1/dur/5.005"/>
+                    <SegmentURL media="sq/2/dur/5.006"/>
+                    <SegmentURL media="sq/3/dur/5.005"/>
+                    <SegmentURL media="sq/4/dur/5.005"/>
+                    <SegmentURL media="sq/5/dur/5.006"/>
+                    <SegmentURL media="sq/6/dur/5.005"/>
+                    <SegmentURL media="sq/7/dur/5.005"/>
+                    <SegmentURL media="sq/8/dur/5.006"/>
+                    <SegmentURL media="sq/9/dur/5.005"/>
+                    <SegmentURL media="sq/10/dur/5.005"/>
+                    <SegmentURL media="sq/11/dur/5.006"/>
+                    <SegmentURL media="sq/12/dur/5.005"/>
+                    <SegmentURL media="sq/13/dur/5.005"/>
+                    <SegmentURL media="sq/14/dur/5.006"/>
+                    <SegmentURL media="sq/15/dur/5.005"/>
+                    <SegmentURL media="sq/16/dur/5.005"/>
+                    <SegmentURL media="sq/17/dur/5.006"/>
+                    <SegmentURL media="sq/18/dur/5.005"/>
+                    <SegmentURL media="sq/19/dur/5.005"/>
+                    <SegmentURL media="sq/20/dur/5.006"/>
+                    <SegmentURL media="sq/21/dur/5.005"/>
+                    <SegmentURL media="sq/22/dur/5.005"/>
+                    <SegmentURL media="sq/23/dur/5.006"/>
+                    <SegmentURL media="sq/24/dur/5.005"/>
+                    <SegmentURL media="sq/25/dur/5.005"/>
+                    <SegmentURL media="sq/26/dur/5.006"/>
+                    <SegmentURL media="sq/27/dur/5.005"/>
+                    <SegmentURL media="sq/28/dur/5.005"/>
+                    <SegmentURL media="sq/29/dur/5.006"/>
+                    <SegmentURL media="sq/30/dur/5.005"/>
+                    <SegmentURL media="sq/31/dur/5.005"/>
+                    <SegmentURL media="sq/32/dur/5.006"/>
+                    <SegmentURL media="sq/33/dur/5.005"/>
+                    <SegmentURL media="sq/34/dur/5.005"/>
+                    <SegmentURL media="sq/35/dur/5.006"/>
+                    <SegmentURL media="sq/36/dur/5.005"/>
+                    <SegmentURL media="sq/37/dur/5.005"/>
+                    <SegmentURL media="sq/38/dur/5.006"/>
+                    <SegmentURL media="sq/39/dur/5.005"/>
+                    <SegmentURL media="sq/40/dur/5.005"/>
+                    <SegmentURL media="sq/41/dur/5.006"/>
+                    <SegmentURL media="sq/42/dur/5.005"/>
+                    <SegmentURL media="sq/43/dur/5.005"/>
+                    <SegmentURL media="sq/44/dur/5.006"/>
+                    <SegmentURL media="sq/45/dur/5.005"/>
+                    <SegmentURL media="sq/46/dur/5.005"/>
+                    <SegmentURL media="sq/47/dur/5.006"/>
+                    <SegmentURL media="sq/48/dur/5.005"/>
+                    <SegmentURL media="sq/49/dur/5.005"/>
+                    <SegmentURL media="sq/50/dur/5.006"/>
+                    <SegmentURL media="sq/51/dur/5.005"/>
+                    <SegmentURL media="sq/52/dur/5.005"/>
+                    <SegmentURL media="sq/53/dur/5.006"/>
+                    <SegmentURL media="sq/54/dur/5.005"/>
+                    <SegmentURL media="sq/55/dur/5.005"/>
+                    <SegmentURL media="sq/56/dur/5.006"/>
+                    <SegmentURL media="sq/57/dur/5.005"/>
+                    <SegmentURL media="sq/58/dur/5.005"/>
+                    <SegmentURL media="sq/59/dur/5.006"/>
+                    <SegmentURL media="sq/60/dur/5.005"/>
+                    <SegmentURL media="sq/61/dur/5.005"/>
+                    <SegmentURL media="sq/62/dur/5.006"/>
+                    <SegmentURL media="sq/63/dur/5.005"/>
+                    <SegmentURL media="sq/64/dur/5.005"/>
+                    <SegmentURL media="sq/65/dur/5.006"/>
+                    <SegmentURL media="sq/66/dur/5.005"/>
+                    <SegmentURL media="sq/67/dur/5.005"/>
+                    <SegmentURL media="sq/68/dur/5.006"/>
+                    <SegmentURL media="sq/69/dur/5.005"/>
+                    <SegmentURL media="sq/70/dur/5.005"/>
+                    <SegmentURL media="sq/71/dur/5.006"/>
+                    <SegmentURL media="sq/72/dur/5.005"/>
+                    <SegmentURL media="sq/73/dur/5.005"/>
+                    <SegmentURL media="sq/74/dur/5.006"/>
+                    <SegmentURL media="sq/75/dur/5.005"/>
+                    <SegmentURL media="sq/76/dur/5.005"/>
+                    <SegmentURL media="sq/77/dur/5.006"/>
+                    <SegmentURL media="sq/78/dur/5.005"/>
+                    <SegmentURL media="sq/79/dur/5.005"/>
+                    <SegmentURL media="sq/80/dur/5.006"/>
+                    <SegmentURL media="sq/81/dur/5.005"/>
+                    <SegmentURL media="sq/82/dur/5.005"/>
+                    <SegmentURL media="sq/83/dur/5.006"/>
+                    <SegmentURL media="sq/84/dur/5.005"/>
+                    <SegmentURL media="sq/85/dur/5.005"/>
+                    <SegmentURL media="sq/86/dur/5.006"/>
+                    <SegmentURL media="sq/87/dur/5.005"/>
+                    <SegmentURL media="sq/88/dur/5.005"/>
+                    <SegmentURL media="sq/89/dur/5.006"/>
+                    <SegmentURL media="sq/90/dur/5.005"/>
+                    <SegmentURL media="sq/91/dur/5.005"/>
+                    <SegmentURL media="sq/92/dur/5.006"/>
+                    <SegmentURL media="sq/93/dur/5.005"/>
+                    <SegmentURL media="sq/94/dur/5.005"/>
+                    <SegmentURL media="sq/95/dur/5.006"/>
+                    <SegmentURL media="sq/96/dur/5.005"/>
+                    <SegmentURL media="sq/97/dur/5.005"/>
+                    <SegmentURL media="sq/98/dur/5.006"/>
+                    <SegmentURL media="sq/99/dur/5.005"/>
+                    <SegmentURL media="sq/100/dur/5.005"/>
+                    <SegmentURL media="sq/101/dur/5.006"/>
+                    <SegmentURL media="sq/102/dur/5.005"/>
+                    <SegmentURL media="sq/103/dur/5.005"/>
+                    <SegmentURL media="sq/104/dur/5.006"/>
+                    <SegmentURL media="sq/105/dur/1.752"/>
+                </SegmentList>
+            </Representation>
+            <Representation id="134" codecs="avc1.4d401e" width="640" height="360" startWithSAP="1" maxPlayoutRate="1" bandwidth="270639" frameRate="24">
+                <BaseURL>https://r5---sn-oxunxg8pjvn-cncl.googlevideo.com/videoplayback/id/dd62257575bc8acb/itag/134/source/youtube/requiressl/yes/initcwndbps/581250/ei/eaAAW-DMEILXxATm5aOICg/mn/sn-oxunxg8pjvn-cncl,sn-hp57kn6e/mm/31,29/pl/48/mv/m/ms/au,rdu/ratebypass/yes/mime/video%2Fmp4/otfp/1/gir/yes/clen/16019587/lmt/1465381369748159/dur/522.348/fvip/5/mt/1526767597/cpn/avj9zzgCO8rle_RN/mpd_version/5/ip/2804:14c:65d6:5b08:b8a5:2f34:66d1:1b19/ipbits/0/expire/1526789337/sparams/ip,ipbits,expire,id,itag,source,requiressl,initcwndbps,ei,mn,mm,pl,mv,ms,ratebypass,mime,otfp,gir,clen,lmt,dur/signature/14DF3985144CEE08421C7A31555B62019B8C7FCD.884933AD9EC0EF748AFF63854DF636E6C7DF79E2/key/dg_yt0/</BaseURL>
+                <SegmentList>
+                    <Initialization sourceURL="range/0-707"/>
+                    <SegmentURL media="range/2000-143892"/>
+                    <SegmentURL media="range/143893-287042"/>
+                    <SegmentURL media="range/287043-432174"/>
+                    <SegmentURL media="range/432175-574536"/>
+                    <SegmentURL media="range/574537-718178"/>
+                    <SegmentURL media="range/718179-863908"/>
+                    <SegmentURL media="range/863909-1007908"/>
+                    <SegmentURL media="range/1007909-1150608"/>
+                    <SegmentURL media="range/1150609-1294146"/>
+                    <SegmentURL media="range/1294147-1460624"/>
+                    <SegmentURL media="range/1460625-1624656"/>
+                    <SegmentURL media="range/1624657-1780425"/>
+                    <SegmentURL media="range/1780426-1922535"/>
+                    <SegmentURL media="range/1922536-2089218"/>
+                    <SegmentURL media="range/2089219-2250294"/>
+                    <SegmentURL media="range/2250295-2412465"/>
+                    <SegmentURL media="range/2412466-2575813"/>
+                    <SegmentURL media="range/2575814-2736615"/>
+                    <SegmentURL media="range/2736616-2903359"/>
+                    <SegmentURL media="range/2903360-3064545"/>
+                    <SegmentURL media="range/3064546-3232866"/>
+                    <SegmentURL media="range/3232867-3383042"/>
+                    <SegmentURL media="range/3383043-3535333"/>
+                    <SegmentURL media="range/3535334-3694389"/>
+                    <SegmentURL media="range/3694390-3851661"/>
+                    <SegmentURL media="range/3851662-4014089"/>
+                    <SegmentURL media="range/4014090-4166299"/>
+                    <SegmentURL media="range/4166300-4330380"/>
+                    <SegmentURL media="range/4330381-4487153"/>
+                    <SegmentURL media="range/4487154-4655942"/>
+                    <SegmentURL media="range/4655943-4817785"/>
+                    <SegmentURL media="range/4817786-4973165"/>
+                    <SegmentURL media="range/4973166-5127435"/>
+                    <SegmentURL media="range/5127436-5273520"/>
+                    <SegmentURL media="range/5273521-5430712"/>
+                    <SegmentURL media="range/5430713-5593829"/>
+                    <SegmentURL media="range/5593830-5741675"/>
+                    <SegmentURL media="range/5741676-5896994"/>
+                    <SegmentURL media="range/5896995-6043432"/>
+                    <SegmentURL media="range/6043433-6189060"/>
+                    <SegmentURL media="range/6189061-6339347"/>
+                    <SegmentURL media="range/6339348-6489993"/>
+                    <SegmentURL media="range/6489994-6647770"/>
+                    <SegmentURL media="range/6647771-6805926"/>
+                    <SegmentURL media="range/6805927-6975245"/>
+                    <SegmentURL media="range/6975246-7127919"/>
+                    <SegmentURL media="range/7127920-7276177"/>
+                    <SegmentURL media="range/7276178-7430748"/>
+                    <SegmentURL media="range/7430749-7592369"/>
+                    <SegmentURL media="range/7592370-7748634"/>
+                    <SegmentURL media="range/7748635-7911377"/>
+                    <SegmentURL media="range/7911378-8058603"/>
+                    <SegmentURL media="range/8058604-8209433"/>
+                    <SegmentURL media="range/8209434-8357579"/>
+                    <SegmentURL media="range/8357580-8504042"/>
+                    <SegmentURL media="range/8504043-8650639"/>
+                    <SegmentURL media="range/8650640-8795093"/>
+                    <SegmentURL media="range/8795094-8947082"/>
+                    <SegmentURL media="range/8947083-9096130"/>
+                    <SegmentURL media="range/9096131-9249006"/>
+                    <SegmentURL media="range/9249007-9393951"/>
+                    <SegmentURL media="range/9393952-9539153"/>
+                    <SegmentURL media="range/9539154-9683104"/>
+                    <SegmentURL media="range/9683105-9830517"/>
+                    <SegmentURL media="range/9830518-9976969"/>
+                    <SegmentURL media="range/9976970-10139483"/>
+                    <SegmentURL media="range/10139484-10301576"/>
+                    <SegmentURL media="range/10301577-10468792"/>
+                    <SegmentURL media="range/10468793-10630616"/>
+                    <SegmentURL media="range/10630617-10787990"/>
+                    <SegmentURL media="range/10787991-10946911"/>
+                    <SegmentURL media="range/10946912-11093295"/>
+                    <SegmentURL media="range/11093296-11247287"/>
+                    <SegmentURL media="range/11247288-11396077"/>
+                    <SegmentURL media="range/11396078-11536968"/>
+                    <SegmentURL media="range/11536969-11679329"/>
+                    <SegmentURL media="range/11679330-11832946"/>
+                    <SegmentURL media="range/11832947-11984329"/>
+                    <SegmentURL media="range/11984330-12139769"/>
+                    <SegmentURL media="range/12139770-12298024"/>
+                    <SegmentURL media="range/12298025-12449010"/>
+                    <SegmentURL media="range/12449011-12599235"/>
+                    <SegmentURL media="range/12599236-12749952"/>
+                    <SegmentURL media="range/12749953-12893760"/>
+                    <SegmentURL media="range/12893761-13052751"/>
+                    <SegmentURL media="range/13052752-13201311"/>
+                    <SegmentURL media="range/13201312-13347695"/>
+                    <SegmentURL media="range/13347696-13503282"/>
+                    <SegmentURL media="range/13503283-13648825"/>
+                    <SegmentURL media="range/13648826-13798567"/>
+                    <SegmentURL media="range/13798568-13959716"/>
+                    <SegmentURL media="range/13959717-14115501"/>
+                    <SegmentURL media="range/14115502-14270403"/>
+                    <SegmentURL media="range/14270404-14427732"/>
+                    <SegmentURL media="range/14427733-14589941"/>
+                    <SegmentURL media="range/14589942-14739893"/>
+                    <SegmentURL media="range/14739894-14897947"/>
+                    <SegmentURL media="range/14897948-15050480"/>
+                    <SegmentURL media="range/15050481-15207491"/>
+                    <SegmentURL media="range/15207492-15369196"/>
+                    <SegmentURL media="range/15369197-15518861"/>
+                    <SegmentURL media="range/15518862-15663686"/>
+                    <SegmentURL media="range/15663687-15818191"/>
+                    <SegmentURL media="range/15818192-15965798"/>
+                    <SegmentURL media="range/15965799-16019586"/>
+                </SegmentList>
+            </Representation>
+            <Representation id="135" codecs="avc1.4d4014" width="854" height="480" startWithSAP="1" maxPlayoutRate="1" bandwidth="1155000" frameRate="24">
+                <BaseURL>https://r5---sn-oxunxg8pjvn-cncl.googlevideo.com/videoplayback/id/dd62257575bc8acb/itag/135/source/yt_otf/requiressl/yes/initcwndbps/581250/ei/eaAAW-DMEILXxATm5aOICg/mn/sn-oxunxg8pjvn-cncl,sn-hp57kn6e/mm/31,29/pl/48/mv/m/ms/au,rdu/ratebypass/yes/mime/video%2Fmp4/otfp/1/otf/1/lmt/1465381371693388/fvip/5/mt/1526767597/cpn/avj9zzgCO8rle_RN/mpd_version/5/ip/2804:14c:65d6:5b08:b8a5:2f34:66d1:1b19/ipbits/0/expire/1526789337/sparams/ip,ipbits,expire,id,itag,source,requiressl,initcwndbps,ei,mn,mm,pl,mv,ms,ratebypass,mime,otfp,otf,lmt/signature/2E57D7E4E84E04BD78BBBDFAE77D3D1625CC03FB.68AAACD5EAEED7C61F773B5913A8B8FFC077264A/key/dg_yt0/</BaseURL>
+                <SegmentList>
+                    <Initialization sourceURL="sq/0"/>
+                    <SegmentURL media="sq/1/dur/5.005"/>
+                    <SegmentURL media="sq/2/dur/5.006"/>
+                    <SegmentURL media="sq/3/dur/5.005"/>
+                    <SegmentURL media="sq/4/dur/5.005"/>
+                    <SegmentURL media="sq/5/dur/5.006"/>
+                    <SegmentURL media="sq/6/dur/5.005"/>
+                    <SegmentURL media="sq/7/dur/5.005"/>
+                    <SegmentURL media="sq/8/dur/5.006"/>
+                    <SegmentURL media="sq/9/dur/5.005"/>
+                    <SegmentURL media="sq/10/dur/5.005"/>
+                    <SegmentURL media="sq/11/dur/5.006"/>
+                    <SegmentURL media="sq/12/dur/5.005"/>
+                    <SegmentURL media="sq/13/dur/5.005"/>
+                    <SegmentURL media="sq/14/dur/5.006"/>
+                    <SegmentURL media="sq/15/dur/5.005"/>
+                    <SegmentURL media="sq/16/dur/5.005"/>
+                    <SegmentURL media="sq/17/dur/5.006"/>
+                    <SegmentURL media="sq/18/dur/5.005"/>
+                    <SegmentURL media="sq/19/dur/5.005"/>
+                    <SegmentURL media="sq/20/dur/5.006"/>
+                    <SegmentURL media="sq/21/dur/5.005"/>
+                    <SegmentURL media="sq/22/dur/5.005"/>
+                    <SegmentURL media="sq/23/dur/5.006"/>
+                    <SegmentURL media="sq/24/dur/5.005"/>
+                    <SegmentURL media="sq/25/dur/5.005"/>
+                    <SegmentURL media="sq/26/dur/5.006"/>
+                    <SegmentURL media="sq/27/dur/5.005"/>
+                    <SegmentURL media="sq/28/dur/5.005"/>
+                    <SegmentURL media="sq/29/dur/5.006"/>
+                    <SegmentURL media="sq/30/dur/5.005"/>
+                    <SegmentURL media="sq/31/dur/5.005"/>
+                    <SegmentURL media="sq/32/dur/5.006"/>
+                    <SegmentURL media="sq/33/dur/5.005"/>
+                    <SegmentURL media="sq/34/dur/5.005"/>
+                    <SegmentURL media="sq/35/dur/5.006"/>
+                    <SegmentURL media="sq/36/dur/5.005"/>
+                    <SegmentURL media="sq/37/dur/5.005"/>
+                    <SegmentURL media="sq/38/dur/5.006"/>
+                    <SegmentURL media="sq/39/dur/5.005"/>
+                    <SegmentURL media="sq/40/dur/5.005"/>
+                    <SegmentURL media="sq/41/dur/5.006"/>
+                    <SegmentURL media="sq/42/dur/5.005"/>
+                    <SegmentURL media="sq/43/dur/5.005"/>
+                    <SegmentURL media="sq/44/dur/5.006"/>
+                    <SegmentURL media="sq/45/dur/5.005"/>
+                    <SegmentURL media="sq/46/dur/5.005"/>
+                    <SegmentURL media="sq/47/dur/5.006"/>
+                    <SegmentURL media="sq/48/dur/5.005"/>
+                    <SegmentURL media="sq/49/dur/5.005"/>
+                    <SegmentURL media="sq/50/dur/5.006"/>
+                    <SegmentURL media="sq/51/dur/5.005"/>
+                    <SegmentURL media="sq/52/dur/5.005"/>
+                    <SegmentURL media="sq/53/dur/5.006"/>
+                    <SegmentURL media="sq/54/dur/5.005"/>
+                    <SegmentURL media="sq/55/dur/5.005"/>
+                    <SegmentURL media="sq/56/dur/5.006"/>
+                    <SegmentURL media="sq/57/dur/5.005"/>
+                    <SegmentURL media="sq/58/dur/5.005"/>
+                    <SegmentURL media="sq/59/dur/5.006"/>
+                    <SegmentURL media="sq/60/dur/5.005"/>
+                    <SegmentURL media="sq/61/dur/5.005"/>
+                    <SegmentURL media="sq/62/dur/5.006"/>
+                    <SegmentURL media="sq/63/dur/5.005"/>
+                    <SegmentURL media="sq/64/dur/5.005"/>
+                    <SegmentURL media="sq/65/dur/5.006"/>
+                    <SegmentURL media="sq/66/dur/5.005"/>
+                    <SegmentURL media="sq/67/dur/5.005"/>
+                    <SegmentURL media="sq/68/dur/5.006"/>
+                    <SegmentURL media="sq/69/dur/5.005"/>
+                    <SegmentURL media="sq/70/dur/5.005"/>
+                    <SegmentURL media="sq/71/dur/5.006"/>
+                    <SegmentURL media="sq/72/dur/5.005"/>
+                    <SegmentURL media="sq/73/dur/5.005"/>
+                    <SegmentURL media="sq/74/dur/5.006"/>
+                    <SegmentURL media="sq/75/dur/5.005"/>
+                    <SegmentURL media="sq/76/dur/5.005"/>
+                    <SegmentURL media="sq/77/dur/5.006"/>
+                    <SegmentURL media="sq/78/dur/5.005"/>
+                    <SegmentURL media="sq/79/dur/5.005"/>
+                    <SegmentURL media="sq/80/dur/5.006"/>
+                    <SegmentURL media="sq/81/dur/5.005"/>
+                    <SegmentURL media="sq/82/dur/5.005"/>
+                    <SegmentURL media="sq/83/dur/5.006"/>
+                    <SegmentURL media="sq/84/dur/5.005"/>
+                    <SegmentURL media="sq/85/dur/5.005"/>
+                    <SegmentURL media="sq/86/dur/5.006"/>
+                    <SegmentURL media="sq/87/dur/5.005"/>
+                    <SegmentURL media="sq/88/dur/5.005"/>
+                    <SegmentURL media="sq/89/dur/5.006"/>
+                    <SegmentURL media="sq/90/dur/5.005"/>
+                    <SegmentURL media="sq/91/dur/5.005"/>
+                    <SegmentURL media="sq/92/dur/5.006"/>
+                    <SegmentURL media="sq/93/dur/5.005"/>
+                    <SegmentURL media="sq/94/dur/5.005"/>
+                    <SegmentURL media="sq/95/dur/5.006"/>
+                    <SegmentURL media="sq/96/dur/5.005"/>
+                    <SegmentURL media="sq/97/dur/5.005"/>
+                    <SegmentURL media="sq/98/dur/5.006"/>
+                    <SegmentURL media="sq/99/dur/5.005"/>
+                    <SegmentURL media="sq/100/dur/5.005"/>
+                    <SegmentURL media="sq/101/dur/5.006"/>
+                    <SegmentURL media="sq/102/dur/5.005"/>
+                    <SegmentURL media="sq/103/dur/5.005"/>
+                    <SegmentURL media="sq/104/dur/5.006"/>
+                    <SegmentURL media="sq/105/dur/1.752"/>
+                </SegmentList>
+            </Representation>
+            <Representation id="160" codecs="avc1.4d400b" width="256" height="144" startWithSAP="1" maxPlayoutRate="1" bandwidth="108000" frameRate="24">
+                <BaseURL>https://r5---sn-oxunxg8pjvn-cncl.googlevideo.com/videoplayback/id/dd62257575bc8acb/itag/160/source/yt_otf/requiressl/yes/initcwndbps/581250/ei/eaAAW-DMEILXxATm5aOICg/mn/sn-oxunxg8pjvn-cncl,sn-hp57kn6e/mm/31,29/pl/48/mv/m/ms/au,rdu/ratebypass/yes/mime/video%2Fmp4/otfp/1/otf/1/lmt/1465381371693388/fvip/5/mt/1526767597/cpn/avj9zzgCO8rle_RN/mpd_version/5/ip/2804:14c:65d6:5b08:b8a5:2f34:66d1:1b19/ipbits/0/expire/1526789337/sparams/ip,ipbits,expire,id,itag,source,requiressl,initcwndbps,ei,mn,mm,pl,mv,ms,ratebypass,mime,otfp,otf,lmt/signature/6FEC9C051CC5583689550FB12FD73681652769FC.304058BA2576AD46EDBF886251EA88144F6A7B67/key/dg_yt0/</BaseURL>
+                <SegmentList>
+                    <Initialization sourceURL="sq/0"/>
+                    <SegmentURL media="sq/1/dur/5.005"/>
+                    <SegmentURL media="sq/2/dur/5.006"/>
+                    <SegmentURL media="sq/3/dur/5.005"/>
+                    <SegmentURL media="sq/4/dur/5.005"/>
+                    <SegmentURL media="sq/5/dur/5.006"/>
+                    <SegmentURL media="sq/6/dur/5.005"/>
+                    <SegmentURL media="sq/7/dur/5.005"/>
+                    <SegmentURL media="sq/8/dur/5.006"/>
+                    <SegmentURL media="sq/9/dur/5.005"/>
+                    <SegmentURL media="sq/10/dur/5.005"/>
+                    <SegmentURL media="sq/11/dur/5.006"/>
+                    <SegmentURL media="sq/12/dur/5.005"/>
+                    <SegmentURL media="sq/13/dur/5.005"/>
+                    <SegmentURL media="sq/14/dur/5.006"/>
+                    <SegmentURL media="sq/15/dur/5.005"/>
+                    <SegmentURL media="sq/16/dur/5.005"/>
+                    <SegmentURL media="sq/17/dur/5.006"/>
+                    <SegmentURL media="sq/18/dur/5.005"/>
+                    <SegmentURL media="sq/19/dur/5.005"/>
+                    <SegmentURL media="sq/20/dur/5.006"/>
+                    <SegmentURL media="sq/21/dur/5.005"/>
+                    <SegmentURL media="sq/22/dur/5.005"/>
+                    <SegmentURL media="sq/23/dur/5.006"/>
+                    <SegmentURL media="sq/24/dur/5.005"/>
+                    <SegmentURL media="sq/25/dur/5.005"/>
+                    <SegmentURL media="sq/26/dur/5.006"/>
+                    <SegmentURL media="sq/27/dur/5.005"/>
+                    <SegmentURL media="sq/28/dur/5.005"/>
+                    <SegmentURL media="sq/29/dur/5.006"/>
+                    <SegmentURL media="sq/30/dur/5.005"/>
+                    <SegmentURL media="sq/31/dur/5.005"/>
+                    <SegmentURL media="sq/32/dur/5.006"/>
+                    <SegmentURL media="sq/33/dur/5.005"/>
+                    <SegmentURL media="sq/34/dur/5.005"/>
+                    <SegmentURL media="sq/35/dur/5.006"/>
+                    <SegmentURL media="sq/36/dur/5.005"/>
+                    <SegmentURL media="sq/37/dur/5.005"/>
+                    <SegmentURL media="sq/38/dur/5.006"/>
+                    <SegmentURL media="sq/39/dur/5.005"/>
+                    <SegmentURL media="sq/40/dur/5.005"/>
+                    <SegmentURL media="sq/41/dur/5.006"/>
+                    <SegmentURL media="sq/42/dur/5.005"/>
+                    <SegmentURL media="sq/43/dur/5.005"/>
+                    <SegmentURL media="sq/44/dur/5.006"/>
+                    <SegmentURL media="sq/45/dur/5.005"/>
+                    <SegmentURL media="sq/46/dur/5.005"/>
+                    <SegmentURL media="sq/47/dur/5.006"/>
+                    <SegmentURL media="sq/48/dur/5.005"/>
+                    <SegmentURL media="sq/49/dur/5.005"/>
+                    <SegmentURL media="sq/50/dur/5.006"/>
+                    <SegmentURL media="sq/51/dur/5.005"/>
+                    <SegmentURL media="sq/52/dur/5.005"/>
+                    <SegmentURL media="sq/53/dur/5.006"/>
+                    <SegmentURL media="sq/54/dur/5.005"/>
+                    <SegmentURL media="sq/55/dur/5.005"/>
+                    <SegmentURL media="sq/56/dur/5.006"/>
+                    <SegmentURL media="sq/57/dur/5.005"/>
+                    <SegmentURL media="sq/58/dur/5.005"/>
+                    <SegmentURL media="sq/59/dur/5.006"/>
+                    <SegmentURL media="sq/60/dur/5.005"/>
+                    <SegmentURL media="sq/61/dur/5.005"/>
+                    <SegmentURL media="sq/62/dur/5.006"/>
+                    <SegmentURL media="sq/63/dur/5.005"/>
+                    <SegmentURL media="sq/64/dur/5.005"/>
+                    <SegmentURL media="sq/65/dur/5.006"/>
+                    <SegmentURL media="sq/66/dur/5.005"/>
+                    <SegmentURL media="sq/67/dur/5.005"/>
+                    <SegmentURL media="sq/68/dur/5.006"/>
+                    <SegmentURL media="sq/69/dur/5.005"/>
+                    <SegmentURL media="sq/70/dur/5.005"/>
+                    <SegmentURL media="sq/71/dur/5.006"/>
+                    <SegmentURL media="sq/72/dur/5.005"/>
+                    <SegmentURL media="sq/73/dur/5.005"/>
+                    <SegmentURL media="sq/74/dur/5.006"/>
+                    <SegmentURL media="sq/75/dur/5.005"/>
+                    <SegmentURL media="sq/76/dur/5.005"/>
+                    <SegmentURL media="sq/77/dur/5.006"/>
+                    <SegmentURL media="sq/78/dur/5.005"/>
+                    <SegmentURL media="sq/79/dur/5.005"/>
+                    <SegmentURL media="sq/80/dur/5.006"/>
+                    <SegmentURL media="sq/81/dur/5.005"/>
+                    <SegmentURL media="sq/82/dur/5.005"/>
+                    <SegmentURL media="sq/83/dur/5.006"/>
+                    <SegmentURL media="sq/84/dur/5.005"/>
+                    <SegmentURL media="sq/85/dur/5.005"/>
+                    <SegmentURL media="sq/86/dur/5.006"/>
+                    <SegmentURL media="sq/87/dur/5.005"/>
+                    <SegmentURL media="sq/88/dur/5.005"/>
+                    <SegmentURL media="sq/89/dur/5.006"/>
+                    <SegmentURL media="sq/90/dur/5.005"/>
+                    <SegmentURL media="sq/91/dur/5.005"/>
+                    <SegmentURL media="sq/92/dur/5.006"/>
+                    <SegmentURL media="sq/93/dur/5.005"/>
+                    <SegmentURL media="sq/94/dur/5.005"/>
+                    <SegmentURL media="sq/95/dur/5.006"/>
+                    <SegmentURL media="sq/96/dur/5.005"/>
+                    <SegmentURL media="sq/97/dur/5.005"/>
+                    <SegmentURL media="sq/98/dur/5.006"/>
+                    <SegmentURL media="sq/99/dur/5.005"/>
+                    <SegmentURL media="sq/100/dur/5.005"/>
+                    <SegmentURL media="sq/101/dur/5.006"/>
+                    <SegmentURL media="sq/102/dur/5.005"/>
+                    <SegmentURL media="sq/103/dur/5.005"/>
+                    <SegmentURL media="sq/104/dur/5.006"/>
+                    <SegmentURL media="sq/105/dur/1.752"/>
+                </SegmentList>
+            </Representation>
+            <Representation id="136" codecs="avc1.4d400b" width="1280" height="720" startWithSAP="1" maxPlayoutRate="1" bandwidth="2310000" frameRate="24">
+                <BaseURL>https://r5---sn-oxunxg8pjvn-cncl.googlevideo.com/videoplayback/id/dd62257575bc8acb/itag/136/source/yt_otf/requiressl/yes/initcwndbps/581250/ei/eaAAW-DMEILXxATm5aOICg/mn/sn-oxunxg8pjvn-cncl,sn-hp57kn6e/mm/31,29/pl/48/mv/m/ms/au,rdu/ratebypass/yes/mime/video%2Fmp4/otfp/1/otf/1/lmt/1465381371693388/fvip/5/mt/1526767597/cpn/avj9zzgCO8rle_RN/mpd_version/5/ip/2804:14c:65d6:5b08:b8a5:2f34:66d1:1b19/ipbits/0/expire/1526789337/sparams/ip,ipbits,expire,id,itag,source,requiressl,initcwndbps,ei,mn,mm,pl,mv,ms,ratebypass,mime,otfp,otf,lmt/signature/012F19CC9A62B8D0B016715A0F2B055F99495656.2EE07AE5C7F2281E442D7BE0DF6D3BCE56186866/key/dg_yt0/</BaseURL>
+                <SegmentList>
+                    <Initialization sourceURL="sq/0"/>
+                    <SegmentURL media="sq/1/dur/5.005"/>
+                    <SegmentURL media="sq/2/dur/5.006"/>
+                    <SegmentURL media="sq/3/dur/5.005"/>
+                    <SegmentURL media="sq/4/dur/5.005"/>
+                    <SegmentURL media="sq/5/dur/5.006"/>
+                    <SegmentURL media="sq/6/dur/5.005"/>
+                    <SegmentURL media="sq/7/dur/5.005"/>
+                    <SegmentURL media="sq/8/dur/5.006"/>
+                    <SegmentURL media="sq/9/dur/5.005"/>
+                    <SegmentURL media="sq/10/dur/5.005"/>
+                    <SegmentURL media="sq/11/dur/5.006"/>
+                    <SegmentURL media="sq/12/dur/5.005"/>
+                    <SegmentURL media="sq/13/dur/5.005"/>
+                    <SegmentURL media="sq/14/dur/5.006"/>
+                    <SegmentURL media="sq/15/dur/5.005"/>
+                    <SegmentURL media="sq/16/dur/5.005"/>
+                    <SegmentURL media="sq/17/dur/5.006"/>
+                    <SegmentURL media="sq/18/dur/5.005"/>
+                    <SegmentURL media="sq/19/dur/5.005"/>
+                    <SegmentURL media="sq/20/dur/5.006"/>
+                    <SegmentURL media="sq/21/dur/5.005"/>
+                    <SegmentURL media="sq/22/dur/5.005"/>
+                    <SegmentURL media="sq/23/dur/5.006"/>
+                    <SegmentURL media="sq/24/dur/5.005"/>
+                    <SegmentURL media="sq/25/dur/5.005"/>
+                    <SegmentURL media="sq/26/dur/5.006"/>
+                    <SegmentURL media="sq/27/dur/5.005"/>
+                    <SegmentURL media="sq/28/dur/5.005"/>
+                    <SegmentURL media="sq/29/dur/5.006"/>
+                    <SegmentURL media="sq/30/dur/5.005"/>
+                    <SegmentURL media="sq/31/dur/5.005"/>
+                    <SegmentURL media="sq/32/dur/5.006"/>
+                    <SegmentURL media="sq/33/dur/5.005"/>
+                    <SegmentURL media="sq/34/dur/5.005"/>
+                    <SegmentURL media="sq/35/dur/5.006"/>
+                    <SegmentURL media="sq/36/dur/5.005"/>
+                    <SegmentURL media="sq/37/dur/5.005"/>
+                    <SegmentURL media="sq/38/dur/5.006"/>
+                    <SegmentURL media="sq/39/dur/5.005"/>
+                    <SegmentURL media="sq/40/dur/5.005"/>
+                    <SegmentURL media="sq/41/dur/5.006"/>
+                    <SegmentURL media="sq/42/dur/5.005"/>
+                    <SegmentURL media="sq/43/dur/5.005"/>
+                    <SegmentURL media="sq/44/dur/5.006"/>
+                    <SegmentURL media="sq/45/dur/5.005"/>
+                    <SegmentURL media="sq/46/dur/5.005"/>
+                    <SegmentURL media="sq/47/dur/5.006"/>
+                    <SegmentURL media="sq/48/dur/5.005"/>
+                    <SegmentURL media="sq/49/dur/5.005"/>
+                    <SegmentURL media="sq/50/dur/5.006"/>
+                    <SegmentURL media="sq/51/dur/5.005"/>
+                    <SegmentURL media="sq/52/dur/5.005"/>
+                    <SegmentURL media="sq/53/dur/5.006"/>
+                    <SegmentURL media="sq/54/dur/5.005"/>
+                    <SegmentURL media="sq/55/dur/5.005"/>
+                    <SegmentURL media="sq/56/dur/5.006"/>
+                    <SegmentURL media="sq/57/dur/5.005"/>
+                    <SegmentURL media="sq/58/dur/5.005"/>
+                    <SegmentURL media="sq/59/dur/5.006"/>
+                    <SegmentURL media="sq/60/dur/5.005"/>
+                    <SegmentURL media="sq/61/dur/5.005"/>
+                    <SegmentURL media="sq/62/dur/5.006"/>
+                    <SegmentURL media="sq/63/dur/5.005"/>
+                    <SegmentURL media="sq/64/dur/5.005"/>
+                    <SegmentURL media="sq/65/dur/5.006"/>
+                    <SegmentURL media="sq/66/dur/5.005"/>
+                    <SegmentURL media="sq/67/dur/5.005"/>
+                    <SegmentURL media="sq/68/dur/5.006"/>
+                    <SegmentURL media="sq/69/dur/5.005"/>
+                    <SegmentURL media="sq/70/dur/5.005"/>
+                    <SegmentURL media="sq/71/dur/5.006"/>
+                    <SegmentURL media="sq/72/dur/5.005"/>
+                    <SegmentURL media="sq/73/dur/5.005"/>
+                    <SegmentURL media="sq/74/dur/5.006"/>
+                    <SegmentURL media="sq/75/dur/5.005"/>
+                    <SegmentURL media="sq/76/dur/5.005"/>
+                    <SegmentURL media="sq/77/dur/5.006"/>
+                    <SegmentURL media="sq/78/dur/5.005"/>
+                    <SegmentURL media="sq/79/dur/5.005"/>
+                    <SegmentURL media="sq/80/dur/5.006"/>
+                    <SegmentURL media="sq/81/dur/5.005"/>
+                    <SegmentURL media="sq/82/dur/5.005"/>
+                    <SegmentURL media="sq/83/dur/5.006"/>
+                    <SegmentURL media="sq/84/dur/5.005"/>
+                    <SegmentURL media="sq/85/dur/5.005"/>
+                    <SegmentURL media="sq/86/dur/5.006"/>
+                    <SegmentURL media="sq/87/dur/5.005"/>
+                    <SegmentURL media="sq/88/dur/5.005"/>
+                    <SegmentURL media="sq/89/dur/5.006"/>
+                    <SegmentURL media="sq/90/dur/5.005"/>
+                    <SegmentURL media="sq/91/dur/5.005"/>
+                    <SegmentURL media="sq/92/dur/5.006"/>
+                    <SegmentURL media="sq/93/dur/5.005"/>
+                    <SegmentURL media="sq/94/dur/5.005"/>
+                    <SegmentURL media="sq/95/dur/5.006"/>
+                    <SegmentURL media="sq/96/dur/5.005"/>
+                    <SegmentURL media="sq/97/dur/5.005"/>
+                    <SegmentURL media="sq/98/dur/5.006"/>
+                    <SegmentURL media="sq/99/dur/5.005"/>
+                    <SegmentURL media="sq/100/dur/5.005"/>
+                    <SegmentURL media="sq/101/dur/5.006"/>
+                    <SegmentURL media="sq/102/dur/5.005"/>
+                    <SegmentURL media="sq/103/dur/5.005"/>
+                    <SegmentURL media="sq/104/dur/5.006"/>
+                    <SegmentURL media="sq/105/dur/1.752"/>
+                </SegmentList>
+            </Representation>
+        </AdaptationSet>
+    </Period>
+</MPD>
