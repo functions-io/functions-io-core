@@ -1,6 +1,6 @@
-const path = require("path");
-
 const functionsio = require("../");
+functionsio.config.listRegistry = ["https://127.0.0.1:8443"];
+
 const moduleFactory = functionsio.buildModuleFactory();
 
 var tempo1 = new Date().getTime();
