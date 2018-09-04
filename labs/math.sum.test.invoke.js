@@ -30,11 +30,10 @@ setTimeout(function(){
     message.id = 1;
     message.jsonrpc = "2.0";
     message.scope = "my-company";
-    message.name = "math.multiply";
+    message.method = "math.multiply";
     message.version = "1";
-    message.data = [20,3];
+    message.params = [20,3];
     invokeFactory.invokeMessage(message, function(errInvoke, messageResponse){
         console.log(errInvoke, messageResponse);
     });
-        
 }, 2000);
