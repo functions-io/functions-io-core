@@ -1,5 +1,5 @@
 const functionsio = require("../");
-functionsio.config.listRegistry = ["https://127.0.0.1:8443"];
+functionsio.config.listRegistry = ["https://127.0.0.1:9443"];
 
 const moduleFactory = functionsio.buildModuleFactory();
 
