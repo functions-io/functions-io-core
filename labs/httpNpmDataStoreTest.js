@@ -13,7 +13,7 @@ httpNpmDataStore.getModuleManifest("async", function(err, manifest){
         
         console.log(manifest["dist-tags"].latest);
         //console.log(manifest.versions);
-        versions = Object.keys(manifest.versions);
+        var versions = Object.keys(manifest.versions);
 
         console.log("^1.1.0", semver.maxSatisfying(versions, "^1.1.0"));
         console.log("1.5.0", semver.maxSatisfying(versions, "1.5.0"));
