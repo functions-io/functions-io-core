@@ -3,16 +3,14 @@
 
 const http2 = require("http2");
 const urlParse = require("url");
-const config = require("../lib/config");
+const config = require("../../lib/config");
 
 var data = [];
-var http_request = null;
 var option = urlParse.parse(config.listRegistry[1]);
 var optionRequest = {};
 
 option.url = option.protocol + "//" + option.host;
 
-var optionRequest = {}
 optionRequest.timeout = 2000;
 optionRequest[":method"] = "GET";
 optionRequest[":path"] = option.path;
@@ -23,7 +21,6 @@ let client = http2.connect(option.url, {rejectUnauthorized:false});
 
 function request(client, optionRequest, callBack){
     let http_request = client.request(optionRequest);
-    let responseHeaders = null;
     http_request.on("response", function(responseHeaders) {
         console.log("response", responseHeaders);
     });
@@ -33,49 +30,14 @@ function request(client, optionRequest, callBack){
     http_request.on("end", function(){
         var buffer = Buffer.concat(data);
         callBack(null, buffer);
-    })
+    });
 }
 
 request(client, optionRequest, function(err, data){
     var fs = require("fs");
     fs.writeFileSync("/tmp/teste1.tgz", data);
     console.log(err, data);
-})
+});
 request(client, optionRequest, function(err, data){
     console.log(err, data);
-})
-
-/*
-client.close();
-client.destroy();
-*/
-
-/*
-var request = http_request.request(option, function(response) {
-    if (response.statusCode === 200){
-        response.on("data", function(chunk){
-            data.push(chunk);
-        });
-        response.on("end", function(chunk){
-            var buffer = Buffer.concat(data);
-            
-            //log
-            console.log("get", url, "-", response.statusCode, "-", (new Date().getTime() - startTime) + "ms", "-", Math.round(buffer.length / 1024) + "Kb");
-            
-            callBack(null, buffer);
-        });
-    }
-    else{
-        callBack(response.statusCode);
-    }
 });
-request.on("timeout", function(res, socket, head) {
-    console.log("timeout");
-    request.abort();
-});
-request.on("error", function(err) {
-    console.log("Erro -> " + err);
-    callBack(err);
-});
-request.end();
-*/

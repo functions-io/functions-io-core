@@ -1,11 +1,9 @@
-const functionsio = require("../");
-functionsio.config.listRegistry = ["https://127.0.0.1:9443"];
-
+const functionsio = require("../../lib");
 const moduleFactory = functionsio.buildModuleFactory();
 
 var tempo1 = new Date().getTime();
 
-moduleFactory.requireAsync("@my-company/math.sum.async", "1")
+moduleFactory.requireAsync("@functions-io-labs/math.sum", "1")
     .then(function(moduleObj){
         console.log(moduleObj(2,3));
         var tempo2 = new Date().getTime();

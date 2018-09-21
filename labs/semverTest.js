@@ -1,8 +1,6 @@
-var httpNpmDataStore = require("../lib/dataStore/httpNpmDataStore");
-
 const semver = require("semver");
 
-var versions = ["1.2.1","1.2.2","1.5.0","2.0.0"]
+var versions = ["1.2.1","1.2.2","1.5.0","2.0.0"];
 
 console.log(semver.valid("^1.1.0"));
 console.log(semver.valid("1.X.0"));

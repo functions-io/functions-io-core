@@ -1,5 +1,5 @@
-const MemoryRegistry = require("../lib/MemoryRegistry");
-const HttpNpmDataStore = require("../lib/dataStore/HttpNpmDataStore");
+const MemoryRegistry = require("../../lib/MemoryRegistry");
+const HttpNpmDataStore = require("../../lib/dataStore/HttpNpmDataStore");
 const memoryRegistry = new MemoryRegistry();
 
 memoryRegistry.addRegistryDataStore(new HttpNpmDataStore());
@@ -9,7 +9,7 @@ memoryRegistry.getDataStoreInRegistry("uuid", "3.2.1", function(err, dataStore){
         console.log(err);
     }
     else{
-        console.log("pronto!");
+        console.log("pronto!", dataStore);
 
         //dataStore
 

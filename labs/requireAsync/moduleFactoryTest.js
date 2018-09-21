@@ -1,6 +1,6 @@
-const ModuleFactory = require("../lib/ModuleFactory");
-const MemoryRegistry = require("../lib/MemoryRegistry");
-const HttpNpmDataStore = require("../lib/dataStore/HttpNpmDataStore");
+const ModuleFactory = require("../../lib/ModuleFactory");
+const MemoryRegistry = require("../../lib/MemoryRegistry");
+const HttpNpmDataStore = require("../../lib/dataStore/HttpNpmDataStore");
 const memoryRegistry = new MemoryRegistry();
 
 memoryRegistry.addRegistryDataStore(new HttpNpmDataStore());

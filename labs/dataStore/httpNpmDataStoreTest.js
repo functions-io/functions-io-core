@@ -1,4 +1,4 @@
-const HttpNpmDataStore = require("../lib/dataStore/HttpNpmDataStore");
+const HttpNpmDataStore = require("../../lib/dataStore/HttpNpmDataStore");
 
 var httpNpmDataStore = new HttpNpmDataStore();
 

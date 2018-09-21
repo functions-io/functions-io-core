@@ -1,4 +1,4 @@
-const functionsio = require("../");
+const functionsio = require("../../lib");
 const moduleFactory = functionsio.buildModuleFactory();
 
 moduleFactory.requireAsync("uuid", "3.2.1")

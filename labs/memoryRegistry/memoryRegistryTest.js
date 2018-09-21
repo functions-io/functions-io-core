@@ -1,5 +1,5 @@
-const MemoryRegistry = require("../lib/MemoryRegistry");
-const HttpNpmDataStore = require("../lib/dataStore/HttpNpmDataStore");
+const MemoryRegistry = require("../../lib/MemoryRegistry");
+const HttpNpmDataStore = require("../../lib/dataStore/HttpNpmDataStore");
 const memoryRegistry = new MemoryRegistry();
 
 memoryRegistry.addRegistryDataStore(new HttpNpmDataStore());
