@@ -9,10 +9,10 @@ const moduleFactory = new ModuleFactory(memoryRegistry);
 
 moduleFactory.requireAsync("uuid", "3.2.1", function(err, moduloObj){
     if (err){
-        console.log(err);
+        console.log("err", err);
     }
     else{
-        console.log("pronto!");
+        console.log("sucess!");
         
         console.log(moduloObj);
     }
