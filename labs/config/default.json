@@ -55,8 +55,8 @@
                 "batchCheckDelay":60000
             }
         },
-        "remote":{
-            "url":"https://registry.npmjs.org"
+        "listRemoteRegistry":{
+            "@default":{"master":"https://localhost:9443", "slave":"https://registry.npmjs.org", "enabled":true}
         }
     }
 }
