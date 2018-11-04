@@ -1,62 +1,22 @@
 {
+    "core":{
+        "log":{
+            "level":"INFO"
+        },
+        "cache":{
+            "blackListLocalModules":["functions-io-core", "functions-io"]
+        }
+    },
     "registry":{
-        "endPoint":{
-            "http":{
-                "enabled":true,
-                "port":9080
-            },
-            "https":{
-                "enabled":true,
-                "port":9443,
-                "cert":{
-                    "key":"data/key.pem",
-                    "cert":"data/cert.pem",
-                    "passphrase":"1234"
-                }
-            }
-        },
-        "store":{
-            "manifest":{
-                "choice":"disk",
-                "disk":{
-                    "folder":"functions-io-cache"
-                },
-                "s3":{
-                    "folder":"functions-io",
-                    "accessKeyId":"",
-                    "secretAccessKey":"",
-                    "bucketName":""
-                }
-            },
-            "tarball":{
-                "choice":"disk",
-                "disk":{
-                    "folder":"functions-io-cache"
-                },
-                "s3":{
-                    "folder":"functions-io",
-                    "accessKeyId":"",
-                    "secretAccessKey":"",
-                    "bucketName":""
-                }
-            }
-        },
-        "manager":{
-            "manifest":{
-                "enableCache":true,
-                "batchUpdate":true,
-                "batchUpdateDelay":3600000,
-                "batchCheckDelay":60000,
-                "cacheTime":86400000
-            },
-            "tarball":{
-                "enableCache":true,
-                "cacheTime":86400000,
-                "batchCheckDelay":60000
-            }
-        },
+        "requestTimeout": 5000,
         "listRemoteRegistry":{
-            "@default":{"master":"https://localhost:9443", "slave":"https://registry.npmjs.org", "enabled":true}
+            "@default":{"master":"https://registry.gambira:8443", "slave":"https://registry.npmjs.org", "enabled":true},
+            "@gambira":{"master":"https://registry.gambira:8443", "slave":"https://registry.gambira:8443", "enabled":true}
+        },
+        "security":{
+            "client":{
+                "token":""
+            }
         }
     }
 }
